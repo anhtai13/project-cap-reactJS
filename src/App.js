@@ -37,7 +37,7 @@ function App() {
         <Route path="/home" element={<ManagerUsers />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/products" element={<ManagerProducts />} />
+        <Route path="/services" element={<ManagerProducts />} />
         <Route path="/order" element={<ManageOrder />} />
         <Route path="/order_user/:id" element={<ManageOrderDetail />} />
         <Route path="/contact" element={<ManageContact />} />
