@@ -290,7 +290,7 @@ function ManagerUsers() {
                         <td>{item.first_name}</td>
                         <td>{item.last_name}</td>
                         <td>
-                          <img src={item.avatar} alt="Ảnh của bạn" />
+                          <img src={item.avatar} alt="Ảnh của bạn" height={120} width={200} />
                         </td>
                         <td>
                           <select
@@ -377,6 +377,7 @@ function ManagerUsers() {
                 type="text"
                 className="form-control"
                 defaultValue={userName}
+                disabled
                 onChange={(e) => setUserName(e.target.value)}
               />
               <label className="form-label mt-2">Email</label>
@@ -384,6 +385,7 @@ function ManagerUsers() {
                 type="text"
                 className="form-control"
                 defaultValue={email}
+                disabled
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label className="form-label mt-2">First Name</label>
@@ -405,6 +407,7 @@ function ManagerUsers() {
                 defaultValue={role}
                 type="text"
                 className="form-control"
+                disabled
                 onChange={(e) => setRole(e.target.value)}
               >
                 <option value={1}>Admin</option>
