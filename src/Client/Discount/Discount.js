@@ -7,7 +7,7 @@ function Discount() {
             <div style={{ position: "fixed", zIndex: "1000", width: "100%" }}>
                 <Header />
             </div>
-            <div className="pt-3">
+            <div className="pt-3" style={{fontFamily:"Arial"}}>
                 <section className="s_text_image o_colored_level pt0 pb0" data-snippet="s_text_image" data-name="Text - Image" >
                     <div className="container">
                         <div className="row align-items-center" data-bs-original-title="" title="" aria-describedby="tooltip327961">

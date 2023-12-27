@@ -1,11 +1,16 @@
+import { useEffect, useState } from "react";
+import { Image } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-
+import { getDetaiUser } from "../../Service/userAPI";
+import { toast } from "react-toastify";
+// function header
 function Header() {
   const navigate = useNavigate();
+  const [user, setUser] = useState(null);
 
   const isLogin = JSON.parse(localStorage.getItem("admin"));
-
+  const userId = JSON.parse(localStorage.getItem("userId"));
   // if (!isLogin) {
   //   navigate("/userlogin");
   // }
@@ -14,15 +19,30 @@ function Header() {
     localStorage.removeItem("admin");
     navigate("/userlogin");
   };
+
+  const handleGetUser = async () => {
+    try {
+      const userDetail = await getDetaiUser(userId);
+      setUser(userDetail);
+    } catch (error) {
+      toast.error(error.response.data.error);
+    }
+  };
+  useEffect(() => {
+    if (isLogin) {
+      handleGetUser();
+    }
+  }, []);
   return (
     <>
-      <div style={{ padding: "0 100px" }} className="bg-light">
+      <div style={{ padding: "0 100px" ,fontFamily:"Arial"}} className="bg-light">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <Link to="/" className="nav-link">
               <img
-                src="https://giatui247.vn/web/image/website/1/logo/Gi%E1%BA%B7t%20%E1%BB%A7i%20247?unique=14cb38c"
+                src="https://th.bing.com/th/id/OIG.MBDpBri6Cxu4Qek0DfkD?pid=ImgGn"
                 alt=""
+                style={{width: "100px", height: "80px",}}
               />
             </Link>
             <div
@@ -107,23 +127,65 @@ function Header() {
                     Giới thiệu
                   </Link>
                 </li>
-                <div className="mt-2 ms-5">
-                  <img
-                    src="https://giatui247.vn/web/image/1459-32ad2657/Call-247-LaunDry.png"
-                    alt=""
-                  />
-                </div>
               </ul>
               <div className="d-flex">
-                {isLogin ? (
+                {isLogin && user ? (
                   <>
-                    <h2 className="text-success me-4">Welcome User!</h2>
+                    {/* <h2 className="text-success me-4">Welcome User!</h2>
                     <button
                       className="btn btn-danger"
                       onClick={() => handleLogout()}
                     >
                       Logout
-                    </button>
+                    </button> */}
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdownMenuLink"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style={{ borderColor: "#F8F9FA" }}
+                        >
+                          <Image
+                            style={{
+                              width: 40,
+                              height: 40,
+                            }}
+                            src={
+                              user[0].avatar === ""
+                                ? "https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg"
+                                : user[0].avatar
+                            }
+                            roundedCircle
+                          />
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              Hồ sơ cá nhân
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/orderclient">
+                              Đơn hàng
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href=""
+                              onClick={() => handleLogout()}
+                            >
+                              Đăng xuất
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </>
                 ) : (
                   <>

@@ -129,460 +129,53 @@ function HomePage() {
           <Carousel.Item style={{ padding: "0 300px" }}>
             <img
               className="d-block w-100"
-              src="https://giatui247.vn/web/image/2402-b139a314/giat-ui-khach-san.png"
+              src="https://th.bing.com/th/id/OIG.OIUMlL5rsYJLk.GPaMBQ?pid=ImgGn"
               alt="First slide"
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "black", paddingBottom: "250px" }}
+              style={{ color: "#03a9f4", paddingBottom: "250px" }}
             >
               <p style={{ fontSize: "50px", fontWeight: "bold" }}>
-                Giặt Ủi 247
+                Giặt Ủi LBS
               </p>
               <p style={{ fontSize: "40px" }}>
-                Giặt ủi đồng phục cho khách sạn tại Đà Nẵng.
+                Giặt ủi tại Đà Nẵng
               </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item style={{ padding: "0 300px" }}>
             <img
               className="d-block w-100"
-              src="https://giatui247.vn/web/image/2589-bc1b6afd/dic-vu-giat-ui-cao-cap-247.png"
+              src="https://th.bing.com/th/id/OIG.0l4.qrwqV7_GaTXO5a9P?pid=ImgGn"
               alt="Second slide"
               height="700px"
             />
-            <Carousel.Caption style={{ color: "red", paddingBottom: "250px" }}>
-              <h3 style={{ fontSize: "50px" }}>
+            <Carousel.Caption style={{ color: "#03a9f4", paddingBottom: "250px" }}>
+              <p style={{ fontSize: "50px" }}>
                 Đặt dịch vụ trực tuyến dễ dàng - Giao nhận tận nơi nhanh chóng ở
-                Đà Nẵng.
-              </h3>
+                Đà Nẵng
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item style={{ padding: "0 300px" }}>
             <img
               className="d-block w-100"
-              src="https://giatui247.vn/web/image/2503-eb472909/giat-say-quan-ao%202.png"
+              src="https://th.bing.com/th/id/OIG.63p9zl_AOfNaZRZEL8Sm?pid=ImgGn"
               alt="Third slide"
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "yellow", paddingBottom: "250px" }}
+              style={{ color: "#03a9f4", paddingBottom: "250px" }}
             >
-              <h3 style={{ fontSize: "50px" }}>
-                Đa dạng dịch vụ từ giặt sấy cơ bản đến giặt ủi cao cấp.
-              </h3>
+              <p style={{ fontSize: "50px"}}>
+                Đa dạng dịch vụ từ giặt sấy cơ bản đến giặt ủi cao cấp
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </div>
       <div className="row align-items-center body-content">
-        <div className="col-lg-8 offset-lg-2 o_colored_level mt-3">
-          <h2
-            style={{ textAlign: "center", fontSize: "40px" }}
-            className="text-primary"
-            data-text="Đa dạng dịch vụ giặt ủi - giặt sấy cho bạn"
-          >
-            Đa dạng dịch vụ giặt ủi - giặt sấy cho bạn
-          </h2>
-          <blockquote>
-            Giặt ủi 247 cung cấp đa dạng chuyên nghiệp các dịch vụ giặt ủi - làm
-            sạch quần áo đồ vải cho bạn, từ Giặt sấy cơ bản đến Giặt ủi cao cấp.
-            Đáp ứng nhu cầu Giặt sấy lấy liền, Giặt ủi cao cấp, Giặt hấp - giặt
-            khô... đảm bảo Nhanh gọn - Sạch sẽ - Gọn gàng - Phẳng phiu - Thơm
-            dịu và tạo tính thẩm mỹ cho quần áo của bạn. Giặt ủi 247 tạo dựng
-            niềm tin và uy tín với khách hàng bởi chất lượng, sự tiện lợi của
-            các dịch vụ mà chúng tôi đang cung cấp dưới đây.{" "}
-          </blockquote>
-          <p style={{ textAlign: "center" }}>
-            <img
-              loading="lazy"
-              data-resize-width="523"
-              aria-describedby="tooltip97785"
-              data-bs-original-title="Giặt ủi 247 cung cấp dịch vụ giặt ủi cao cấp và chuyên nghiệp"
-              data-mimetype="image/png"
-              data-original-src="/web/image/2359-9f948fcd/mission-247Laundry.png"
-              data-original-id="2359"
-              className="img img-fluid o_we_custom_image mx-auto d-block shadow"
-              src="https://giatui247.vn/web/image/2361-aee295d7/mission-247Laundry.png"
-              alt="Giặt ủi 247 - Dịch vụ giặt ủi cao cấp chuyên nghiệp tại Đà Nẵng"
-              title="Giặt ủi 247 - Dịch vụ giặt ủi cao cấp chuyên nghiệp tại Đà Nẵng"
-            />
-            <span style={{ fontSize: "12px", textAlign: "center" }}>
-              247 cung cấp dịch vụ giặt ủi cao cấp và chuyên nghiệp tại Đà Nẵng.
-            </span>
-          </p>
-          <p style={{ textAlign: "center" }}>
-            <a
-              className="btn btn-custom text-white btn-sm"
-              href="/ve-chung-toi"
-              title="Về Giặt ủi 247"
-              style={{
-                borderWidth: "0px",
-                borderStyle: "solid",
-                backgroundImage:
-                  "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-              }}
-            >
-              <span
-                className="fa fa-long-arrow-right"
-                data-bs-original-title="Giặt ủi 247 giới thiệu"
-                title="Giặt ủi 247 giới thiệu"
-                aria-describedby="tooltip902191"
-                style={{ padding: "2px !important" }}
-              ></span>
-              Về Chúng Tôi
-            </a>
-          </p>
-        </div>
-        <div className="pt16 pb16 o_colored_level col-lg-4">
-          <div
-            className="s_card card w-100"
-            title="Dịch vụ giặt ủi cao cấp"
-            data-name="Card"
-          >
-            <div className="card-body">
-              <h3
-                style={{ textAlign: "center" }}
-                data-text="Dịch vụ giặt ủi cao cấp"
-              >
-                Dịch vụ giặt ủi cao cấp
-              </h3>
-              <p>
-                Giặt ủi cao cấp là dịch vụ làm sạch và chăm sóc quần áo với chất
-                lượng cao nhất tại Giặt ủi 247 như: Giặt ủi Quần Tây - Áo Sơ Mi
-                công sở, giặt ủi Đầm Váy dự tiệc, áo Vest, Áo thun...với sự tỉ
-                mỉ và chuyên nghiệp nhất của 247.
-              </p>
-              <p>
-                <img
-                  src="https://giatui247.vn/web/image/2589-bc1b6afd/dic-vu-giat-ui-cao-cap-247.png"
-                  alt="Dịch vụ giặt ủi cao cấp"
-                  className="img img-fluid o_we_custom_image mx-auto d-block rounded shadow"
-                  data-original-id="2588"
-                  data-original-src="/web/image/2588-28b7a2cb/dic-vu-giat-ui-cao-cap-247.png"
-                  data-mimetype="image/png"
-                  data-resize-width="962"
-                  data-bs-original-title=""
-                  title="Dịch vụ giặt ủi cao cấp"
-                  aria-describedby="tooltip206427"
-                  loading="lazy"
-                />
-              </p>
-              <ul>
-                <li>
-                  Dịch vụ được thực hiện với tay nghề cao cùng kinh nghiệm dày
-                  dặn trong việc xử lý, giặt giũ quần áo thời trang cao cấp cho
-                  khách hàng của công nhân viên 247.
-                </li>
-                <li>
-                  Chính vì giá giặt ủi hợp lý, chất lượng cao cùng phương pháp
-                  chăm sóc bảo quản tốt nhất cho quần áo của khách hàng tại Giặt
-                  ủi 247, vì vậy khi cần giặt sạch và ủi phẳng phiu những bộ đồ
-                  đi làm, đi học...thì giặt ủi tại các tiệm gần nhất của 247 là
-                  sự lựa chọn tốt nhất cho bạn.
-                </li>
-                <li>
-                  Đặt lịch giặt ủi trực tuyến trải nghiệm chất lượng và tỉ mỉ
-                  tận tâm phục vụ tại các tiệm giặt ủi của 247.
-                </li>
-              </ul>
-              <p style={{ textAlign: "center" }}>
-                <a
-                  className="btn btn-custom text-white btn-sm"
-                  href="/dich-vu-giat-ui"
-                  title="Chi tiết dịch vụ giặt ủi cao cấp tại 247"
-                  style={{
-                    borderWidth: "0px",
-                    borderStyle: "solid",
-                    backgroundImage:
-                      "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-                  }}
-                >
-                  <span
-                    className="fa fa-long-arrow-right"
-                    title="Chi tiết dịch vụ giặt ủi tại 247"
-                    aria-describedby="tooltip902191"
-                    style={{ padding: "2px !important" }}
-                  ></span>
-                  Chi tiết dịch vụ giặt ủi tại 247
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="pt16 pb16 o_colored_level col-lg-4 border rounded shadow o_we_force_no_transition center-box"
-          style={{
-            borderWidth: "1px !important",
-            borderRadius: "5px !important",
-            borderColor: "rgb(206, 212, 218) !important",
-            boxShadow: "rgb(206, 212, 218) 2px 2px 7px 1px !important",
-          }}
-        >
-          <div
-            className="s_card card w-100 o_we_force_no_transition"
-            data-name="Card"
-          >
-            <div className="card-body" title="Dịch vụ giặt sấy lấy liền">
-              <h3
-                style={{ textAlign: "center" }}
-                data-text="Dịch vụ giặt sấy lấy liền"
-              >
-                Dịch vụ giặt sấy lấy liền
-              </h3>
-              <p>
-                Giặt sấy là dịch vụ tiện ích cung cấp bởi Giặt ủi 247 trong việc
-                giặt sạch - sấy khô nhanh chóng cho quần áo và các sản phẩm đồ
-                vải của khách hàng như: Giặt sấy quần áo thường ngày, Giặt sấy
-                chăn mền, Giặt Màn cửa tận nhà, Gấu bông cỡ lớn, Túi xách... vô
-                cùng nhanh chóng tại các Tiệm giặt sấy của 247
-              </p>
-              <p>
-                <img
-                  src="https://giatui247.vn/web/image/2503-eb472909/giat-say-quan-ao%202.png"
-                  alt="Dịch vụ giặt sấy lấy liền tại Giặt ủi 247"
-                  className="img img-fluid o_we_custom_image mx-auto d-block"
-                  data-original-id="2501"
-                  data-original-src="/web/image/2501-9240b7ff/giat-say-quan-ao%202.png"
-                  data-mimetype="image/png"
-                  data-resize-width="476"
-                  title="Dịch vụ giặt sấy lấy liền tại Giặt ủi 247"
-                  aria-describedby="tooltip773447"
-                  loading="lazy"
-                />
-              </p>
-              <ul>
-                <li>
-                  Quần áo và trang phục của khách hàng sẽ được 247 Giặt sạch sẽ,
-                  sấy nhanh lẹ, xếp gọn gàng, hương thơm dịu trong thời gian
-                  nhanh nhất mang lại sự tiện lợi cho khách hàng khi giặt sấy
-                  tại 247.
-                </li>
-                <li>
-                  Chính vì lợi ích mang lại to lớn của dịch vụ giặt sấy lấy liền
-                  giúp các gia đình, cá nhân tiết kiệm được rất nhiều công sức
-                  trong việc giặt giũ dọn dẹp nhà cửa, để có thêm nhiều thời
-                  gian làm những công việc yêu thích.
-                </li>
-                <li>
-                  Để đáp ứng nhu cầu ngày càng cao, 247 đã triển khai dịch vụ
-                  Giặt sấy lấy liền tại các cửa hàng giặt ủi của 247 gần các khu
-                  dân cư nhất và có giao tận nhà khách hàng, sẵn sàng cung cấp
-                  dịch vụ một cách nhanh chóng và tiện lợi hơn cho khách hàng.
-                </li>
-              </ul>
-              <p style={{ textAlign: "center" }}>
-                <Link
-                  className="btn btn-custom text-white btn-sm"
-                  to="/fast"
-                  title="Xem chi tiết dịch vụ giặt sấy lấy liền"
-                  style={{
-                    borderWidth: "0px",
-                    borderStyle: "solid",
-                    backgroundImage:
-                      "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-                  }}
-                >
-                  <span
-                    className="fa fa-long-arrow-right"
-                    title="Chi tiết dịch vụ giặt sấy của Giặt ủi 247"
-                    aria-describedby="tooltip902191"
-                    style={{ padding: "2px !important" }}
-                  ></span>
-                  Chi tiết dịch vụ giặt sấy lấy liền
-                </Link>
-              </p>
-            </div>
-          </div>
-          <div
-            className="s_card card w-100 o_we_force_no_transition"
-            data-name="Card"
-          >
-            <div
-              className="card-body"
-              title="Dịch vụ giặt hấp (Giặt khô - là hơi)"
-            >
-              <h3
-                style={{ textAlign: "center" }}
-                data-text="Dịch vụ giặt hấp (Giặt khô - là hơi)"
-              >
-                Dịch vụ giặt hấp (Giặt khô - là hơi)
-              </h3>
-              <p>
-                Giặt hấp (giặt khô) là dịch vụ làm sạch, chăm sóc, vệ sinh các
-                sản phẩm thời trang có kiểu dáng, chất liệu cao cấp đặc biệt cần
-                sự tỉ mỉ, tận tâm, chuyên nghiệp cùng nguyên liệu - thiết bị máy
-                móc giặt ủi chuyên biệt tại 247.
-              </p>
-              <ul>
-                <li>
-                  Giặt hấp - giặt khô tại 247 sử dụng nguyên liệu, dung môi làm
-                  sạch nhập khẩu cùng với thiết bị cùng máy móc hiện đại trong
-                  nghành giặt ủi - giặt là cao cấp.
-                </li>
-                <li>
-                  Nhân viên 247 có kinh nghiệm lâu năm được đào tạo tập huấn kỹ
-                  lưỡng với phương pháp phù hợp nhất cho chất liệu quần áo cao
-                  cấp của khách hàng.
-                </li>
-              </ul>
-              <p style={{ textAlign: "center" }}>
-                <a
-                  className="btn btn-custom text-white btn-sm"
-                  href="/dich-vu-giat-hap"
-                  title="Dịch vụ giặt hấp - giặt khô"
-                  style={{
-                    borderWidth: "0px",
-                    borderStyle: "solid",
-                    backgroundImage:
-                      "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-                  }}
-                >
-                  <span
-                    className="fa fa-long-arrow-right"
-                    title="Chi tiết dịch vụ giặt hấp - giặt khô của Giặt ủi 247"
-                    aria-describedby="tooltip902191"
-                    style={{ padding: "2px !important" }}
-                  ></span>
-                  Xem chi tiết dịch vụ giặt hấp - giặt khô
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="pt16 pb16 o_colored_level col-lg-4 o_we_force_no_transition">
-          <div
-            className="s_card card w-100 o_we_force_no_transition"
-            data-name="Card"
-          >
-            <div className="card-body" title="Giặt ủi cho khách sạn - nhà hàng">
-              <h3
-                style={{ textAlign: "center" }}
-                data-text="Giặt ủi cho Khách sạn - Nhà hàng"
-              >
-                Giặt ủi cho Khách sạn - Nhà hàng
-              </h3>
-              <p>
-                Giặt ủi 247 cung cấp dịch vụ giặt ủi chuyên nghiệp cho dành
-                riêng cho các khách sạn - nhà nghỉ....bảo đảm tốt nhiệm vụ vệ
-                sinh, làm sạch các sản phẩm đồ vải (linen) chăn ga, mền gối,
-                khăn tắm khăn măt... được trang bị cho phòng khách sạn.
-              </p>
-              <p>
-                <img
-                  src="https://giatui247.vn/web/image/2402-b139a314/giat-ui-khach-san.png"
-                  className="img img-fluid o_we_custom_image mx-auto d-block shadow"
-                  data-original-id="2202"
-                  data-original-src="/web/image/2202-fd506028/giat-ui-khach-san.png"
-                  data-mimetype="image/png"
-                  data-resize-width="690"
-                  title="Dịch vụ giặt ủi cho khách sạn - nhà hàng"
-                  aria-describedby="tooltip982471"
-                  loading="lazy"
-                  alt="Dịch vụ giặt ủi cho khách sạn - nhà hàng"
-                />
-              </p>
-              <ul>
-                <li>
-                  Với hệ thống máy móc công suất lớn (quy mô công nghiệp) và các
-                  công cụ, thiết bị giặt ủi hiện đại được sử dụng trong các khâu
-                  Giặt - Sấy - Ủi chăn, ga, gối, nệm của khách sạn... nên bảo
-                  đảm đúng tiến độ cùng chất lượng giặt ủi vượt trội.
-                </li>
-                <li>
-                  Ngoài nhiệm vụ đảm bảo tốt tiến độ, chất lượng của dịch vụ
-                  cung cấp, Giặt ủi 247 đã hoàn thiện và số hóa các quy trình,
-                  nghiệp vụ khi cung cấp dịch vụ giặt ủi cho khách sạn.
-                </li>
-                <li>
-                  Bên cạnh đó, 247 kết hợp một cách chặt chẽ - ăn khớp với các
-                  bộ phận buồng phòng của khách sạn qua đó đẩy nhanh được công
-                  việc giảm nhân sự mà vẫn bảo đảm việc kiểm soát, hạn chế mát
-                  hư hỏng - kéo dài thời gian sử dụng cho đồ vải của khách sạn.
-                </li>
-              </ul>
-              <p style={{ textAlign: "center" }}>
-                <a
-                  className="btn btn-custom text-white btn-sm"
-                  href="/dich-vu-giat-ui-cho-khach-san"
-                  data-bs-original-title=""
-                  title="Xem chi tiết dịch vụ Giặt ủi cho khách sạn"
-                  style={{
-                    borderWidth: "0px",
-                    borderStyle: "solid",
-                    backgroundImage:
-                      "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-                  }}
-                >
-                  <span
-                    className="fa fa-long-arrow-right"
-                    title="Chi tiết dịch vụ giặt ủi khách sạn - nhà hàng"
-                    aria-describedby="tooltip902191"
-                    style={{ padding: "2px !important" }}
-                  ></span>
-                  Dịch vụ giặt ủi cho khách sạn
-                </a>
-              </p>
-            </div>
-          </div>
-          <div
-            className="s_card card w-100 o_we_force_no_transition"
-            data-name="Card"
-          >
-            <div
-              className="card-body"
-              title="Giặt khăn spa - Giặt ủi đồng phục"
-            >
-              <h3
-                style={{ textAlign: "center" }}
-                data-text="Dịch vụ giặt khăn Spa - Giặt ủi đồng phục"
-              >
-                Giặt khăn Spa - Giặt ủi đồng phục
-              </h3>
-              <p>
-                Khi giặt khăn (các loại khăn tắm, khăn mặt) tại 247, chúng tôi
-                bảo đảm khử sạch mùi tinh dầu, hóa chất mỹ phẩm dính trên khăn
-                đã dùng của Spa, một đặc thù trong nghành.
-              </p>
-              <ul>
-                <li>
-                  Với đội ngũ nhân viên giàu kinh nghiệm, khăn của Spa sau khi
-                  được giặt sấy tại 247 bảo đảm luôn bông xốp thấm hút tốt, và
-                  đặc biệt khử tới 90% mùi tinh dầu tạo hương dịu nhẹ cho chất
-                  liệu Cotton.
-                </li>
-                <li>
-                  Hơn nữa giặt ủi 247 còn nhận tẩy trắng - làm mới khăn Spa,
-                  khăn tắm, khăn mặt của khách sạn, cơ sở thẩm mỹ và các loại
-                  vật dụng đồ vải, đồng phục cơ quan - tổ chức mang lại sự tươi
-                  mới tăng tính thẩm mỹ cho sản phẩm.
-                </li>
-              </ul>
-              <p style={{ textAlign: "center" }}>
-                <a
-                  className="btn btn-custom text-white btn-sm"
-                  href="/shop/category/co-quan-to-chuc-6"
-                  data-bs-original-title=""
-                  title="Xem chi tiêt dịch vụ Giặt khăn Spa - Giặt ủi đồng phục tại Giặt ủi 247"
-                  style={{
-                    borderWidth: "0px",
-                    borderStyle: "solid",
-                    backgroundImage:
-                      "linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%)",
-                  }}
-                >
-                  <span
-                    className="fa fa-long-arrow-right"
-                    title="Xem chi tiết dịch vụ giặt khăn Spa - Đồng phục công ty tại Giặt ủi 247"
-                    aria-describedby="tooltip902191"
-                    style={{ padding: "2px !important" }}
-                  ></span>
-                  Chi tiết dịch vụ Giặt khăn spa
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
         <div className="mt-5 row">
           <h2 className="text-center">
             <font
@@ -597,7 +190,7 @@ function HomePage() {
           </h2>
           <p style={{ textAlign: "center" }}>
             Nhanh hơn tiện lợi hơn cho khách hàng cùng với những khác biệt về
-            chất lượng dịch vụ khi lựa chọn giặt ủi tại 247
+            chất lượng dịch vụ khi lựa chọn giặt ủi tại LBS
           </p>
           <div className="row g-0 s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
             <div className="col-lg text-lg-end">
@@ -612,7 +205,7 @@ function HomePage() {
                   </div>
                   <p>
                     Dễ dàng đặt lịch giặt ủi cho quần áo - trang phục của bạn
-                    tại Giặt ủi 247
+                    tại Giặt ủi LBS
                   </p>
                 </div>
                 <div
@@ -624,7 +217,7 @@ function HomePage() {
                     <h3>Cung cấp dịch vụ da dạng</h3>
                   </div>
                   <p>
-                    Giặt ủi 247 đang cung cấp các dịch vụ giặt ủi, giặt sấy, tẩy
+                    Giặt ủi LBS đang cung cấp các dịch vụ giặt ủi, giặt sấy, tẩy
                     điểm, giặt ủi công nghiệp... đáp ứng mọi nhu cầu của khách
                     hàng với chất lượng cao nhất
                   </p>
@@ -638,7 +231,7 @@ function HomePage() {
                     <h3>Nhân viên nhiều kinh nghiệm</h3>
                   </div>
                   <p>
-                    Nhân viên tại 247 được đào tạo, tập huấn bài bản, nhiều năm
+                    Nhân viên tại LBS được đào tạo, tập huấn bài bản, nhiều năm
                     kinh nghiệm trong từng nghiệp vụ giặt, ủi, chăm sóc vệ sinh
                     quần áo của khách hàng với sự tậm tâm và tỉ mỉ nhất.
                   </p>
@@ -653,7 +246,7 @@ function HomePage() {
                   </div>
                   <p>
                     Trải nghiệm vượt trội trước và sau khi sử dụng dịch vụ giặt
-                    ủi với những chương trình ưu đãi khuyến mại chỉ có tại 247.
+                    ủi với những chương trình ưu đãi khuyến mại chỉ có tại LBS.
                   </p>
                 </div>
               </div>
@@ -661,14 +254,14 @@ function HomePage() {
             <div style={{ alignSelf: "center" }} className="col-lg-3">
               <img
                 src="https://giatui247.vn/web/image/2535-4b23155a/247-Laundry-guideline.png"
-                alt="Giặt ủi với chất lượng dịch vụ tốt nhất tại 247"
+                alt="Giặt ủi với chất lượng dịch vụ tốt nhất tại LBS"
                 className="img img-fluid o_we_custom_image mx-auto d-block"
                 data-original-id="2534"
                 data-original-src="/web/image/2534-e2071bb7/247-Laundry-guideline.png"
                 data-mimetype="image/png"
                 data-resize-width="undefined"
                 data-bs-original-title=""
-                title="Giặt ủi với chất lượng dịch vụ tốt nhất tại 247"
+                title="Giặt ủi với chất lượng dịch vụ tốt nhất tại LBS"
                 aria-describedby="tooltip178242"
                 loading="lazy"
               />
@@ -711,7 +304,7 @@ function HomePage() {
                     <h3>Nguyên liệu - máy móc hiện đại</h3>
                   </div>
                   <p>
-                    Giặt ủi với máy móc hiện đại nhất được 247 trang bị cho các
+                    Giặt ủi với máy móc hiện đại nhất được LBS trang bị cho các
                     tiệm giặt ủi và xưởng giặt cùng nguyên liệu thân thiện với
                     môi trường và sức khỏe.
                   </p>
@@ -725,10 +318,10 @@ function HomePage() {
                     <h3>Chính sách dịch vụ rõ ràng</h3>
                   </div>
                   <p>
-                    247 luôn tạo dựng uy tín và niềm tin tới khách hàng với
+                    LBS luôn tạo dựng uy tín và niềm tin tới khách hàng với
                     những chính sách cụ thể và rõ ràng nhất, bảo vệ quyền lợi
-                    tuyệt đối cho khách hàng khi giặt ủi tại 247. Đây chính là
-                    giá trị cốt lõi gắn bó lâu dài giữa khách hàng và 247.
+                    tuyệt đối cho khách hàng khi giặt ủi tại LBS. Đây chính là
+                    giá trị cốt lõi gắn bó lâu dài giữa khách hàng và LBS.
                   </p>
                 </div>
               </div>
@@ -745,13 +338,13 @@ function HomePage() {
               <div className="col-lg-6 pt16 pb16 o_colored_level">
                 <img
                   src="https://giatui247.vn/web_editor/shape/illustration/online-shopping-svg-594?c1=%23637BBE&unique=ea83d576"
-                  alt="Đặt giặt ủi trực tuyến - Book lịch giặt ủi tại 247"
+                  alt="Đặt giặt ủi trực tuyến - Book lịch giặt ủi tại LBS"
                   className="img img-fluid o_we_custom_image mx-auto d-block"
                   data-original-id="594"
                   data-original-src="/web_editor/shape/illustration/online-shopping-svg-594?c1=%23637BBE&amp;unique=ea83d576"
                   data-mimetype="image/svg+xml"
                   data-resize-width="undefined"
-                  title="Đặt giặt ủi trực tuyến - Book lịch giặt ủi tại 247"
+                  title="Đặt giặt ủi trực tuyến - Book lịch giặt ủi tại LBS"
                   loading="lazy"
                 />
               </div>
@@ -760,7 +353,7 @@ function HomePage() {
                   Đặt Dịch Vụ - Lên Lịch Giặt Ủi Online
                 </h2>
                 <p>
-                  Thảnh thơi nghỉ ngơi việc giặt ủi cứ để 247 lo! Đặt giặt ủi
+                  Thảnh thơi nghỉ ngơi việc giặt ủi cứ để LBS lo! Đặt giặt ủi
                   trực tuyến dễ dàng hay book lịch giặt ủi cho bất kỳ sản phẩm
                   quần áo thời trang nào của bạn ngay tại nhà với chỉ một vài
                   click.
@@ -772,12 +365,12 @@ function HomePage() {
                     tuyến.
                   </li>
                   <li>
-                    Đặt lịch giặt ủi với 247 giúp bạn tùy chọn thời gian nhận và
+                    Đặt lịch giặt ủi với LBS giúp bạn tùy chọn thời gian nhận và
                     trả đồ cho bạn bất cứ khi nào!
                   </li>
                   <li>
                     Yêu cầu dịch vụ của bạn đồng bộ tức thời với Tiệm giặt ủi
-                    247 gần bạn nhất!
+                    LBS gần bạn nhất!
                   </li>
                 </ul>
                 <p style={{ textAlign: "center" }}>
@@ -815,7 +408,7 @@ function HomePage() {
             <p className="text-center">
               Dễ dàng tra cứu đơn giá dịch vụ cụ thể ứng với từng sản phẩm -
               từng loại hay chất liệu quần áo, báo giá và đặt dịch vụ giặt ủi
-              trực quan và nhanh chóng tại 247
+              trực quan và nhanh chóng tại LBS
             </p>
             <div className="row" style={{ padding: "0 300px" }}>
               {currentProduct.map((item) => {
@@ -1039,380 +632,7 @@ function HomePage() {
               data-name="Search"
               style={{ backgroundImage: "none" }}
             >
-              <div className="">
-                <div className="row">
-                  <div className="col-lg-8 offset-lg-2 o_colored_level">
-                    <h3 style={{ textAlign: "center", fontSize: "40px" }}>
-                      Tìm dịch vụ và sản phẩm
-                    </h3>
-                    <p style={{ textAlign: "center" }}>
-                      <span style={{ fontSize: "14px" }}>
-                        Sử dụng chức năng tìm kiếm mạnh mẽ tại 247 khi bạn muốn
-                        tìm thông tin dịch vụ, đơn giá - bảng giá giặt ủi mới
-                        nhất, mẹo giặt ủi hay và tình huống - câu hỏi thường
-                        gặp.... VD: "Giá giặt hấp Áo Vest" ....
-                      </span>
-                    </p>
-                    <form
-                      method="get"
-                      data-snippet="s_searchbar_input"
-                      className="o_searchbar_form s_searchbar_input"
-                      action="/website/search"
-                      data-name="Search"
-                    >
-                      <div role="search" className="input-group mb-3">
-                        <input
-                          type="search"
-                          name="search"
-                          className="search-query form-control oe_search_box None"
-                          placeholder="Tìm thông tin dịch vụ"
-                          data-search-type="all"
-                          data-limit="20"
-                          data-display-image="true"
-                          data-display-description="true"
-                          data-display-extra-link="true"
-                          data-display-detail="true"
-                          data-order-by="name asc"
-                          autocomplete="off"
-                        />
-                        <button
-                          type="submit"
-                          aria-label="Tìm thông tin Giặt ủi"
-                          title="Tìm thông tin Giặt ủi"
-                          className="btn oe_search_button btn-primary"
-                        >
-                          <i className="oi oi-search"></i>
-                        </button>
-                      </div>
-                      <input
-                        name="order"
-                        type="hidden"
-                        className="o_search_order_by"
-                        value="name asc"
-                      />
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <div className="row">
-              <div className="col-lg-6 pt16 pb16 o_colored_level">
-                <table
-                  style={{
-                    verticalAlign: "middle",
-                    textAlign: "center",
-                    height: "632.953px",
-                    marginTop: "0.875px",
-                  }}
-                  className="table table-bordered"
-                >
-                  <tbody>
-                    <tr style={{ height: "71.3906px" }}>
-                      <td colspan="3">
-                        <h3 style={{ textAlign: "center" }}>Giá Giặt Ủi</h3>
-                      </td>
-                    </tr>
-                    <tr style={{ height: "100px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvc-01-giat-ui-ao-so-mi-11"
-                          title="Giặt ủi áo Sơ Mi"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.template/11/image_512/%5BDVC-01%5D%20Giặt%20ủi%20áo%20Sơ%20Mi?unique=2ec5755"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-original-id="1034"
-                            data-original-src="/web/image/1034-cc1d38f1/giat-say-cato.png"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            data-bs-original-title=""
-                            title="Giặt ủi áo Sơ Mi"
-                            aria-describedby="tooltip795850"
-                            alt="Giặt ủi áo Sơ Mi"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt ủi Áo Sơ Mi</td>
-                      <td>30.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "114.938px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvc-02-giat-ui-quan-au-quan-tay-16"
-                          title="Giặt ủi Quần Âu (Quần Tây)"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/42/image_1024/%5BDVH-09%5D%20Giặt%20hấp%20quần%20Âu?unique=783ec59"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-original-id="1034"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt ủi Quần Tây/(Âu)"
-                            alt="Giặt ủi Quần Tây/(Âu)"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt ủi Quần Âu (Quần Tây)</td>
-                      <td>30.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "107.031px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvc-03-giat-ui-ao-vest-17"
-                          title=""
-                          data-bs-original-title="Giặt ủi áo Vest"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/17/image_1024/%5BDVC-03%5D%20Giặt%20ủi%20áo%20Vest?unique=6f02ccd"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-original-id="1034"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt ủi Áo Vest"
-                            alt="Giặt ủi Áo Vest"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt ủi áo Vest</td>
-                      <td>45.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "107.031px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvc-07-giat-ui-ao-thun-22"
-                          title="Giặt ủi áo Thun"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/22/image_1024/%5BDVC-07%5D%20Giặt%20ủi%20áo%20Thun?unique=5041589"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-original-id="1034"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt ủi áo Thun"
-                            alt="Giặt ủi áo Thun"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt ủi Áo Thun</td>
-                      <td>25.500đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "131.562px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvc-04-giat-ui-am-vay-18"
-                          title="Giặt ủi Đầm/Váy"
-                        >
-                          <img
-                            width="60"
-                            height="60"
-                            src="https://giatui247.vn/web/image/product.product/18/image_1024/%5BDVC-04%5D%20Giặt%20ủi%20Đầm%20Váy?unique=972acfb"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-original-id="1034"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt ủi Đầm/Váy"
-                            alt="Giặt ủi Đầm/Váy"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt ủi Đầm (Váy)</td>
-                      <td>40.000đ/Cái</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div className="col-lg-6 pt16 pb16 o_colored_level">
-                <table
-                  style={{ textAlign: "center", verticalAlign: "middle" }}
-                  className="table table-bordered"
-                >
-                  <tbody>
-                    <tr style={{ height: "71.3906px" }}>
-                      <td colspan="3">
-                        <h3 style={{ textAlign: "center" }}>
-                          Giá Giặt Hấp (Giặt Khô)
-                        </h3>
-                      </td>
-                    </tr>
-                    <tr style={{ height: "100px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvh-08-giat-hap-ao-so-mi-41"
-                          title="Giặt hấp áo Sơ Mi"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/41/image_1024/%5BDVH-08%5D%20Gi%E1%BA%B7t%20h%E1%BA%A5p%20%C3%A1o%20S%C6%A1%20Mi?unique=229a026"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            data-bs-original-title=""
-                            title="Giặt hấp áo Sơ Mi"
-                            aria-describedby="tooltip795850"
-                            alt="Giặt hấp áo Sơ Mi"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt hấp Áo Sơ Mi</td>
-                      <td>45.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "114.938px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvh-09-giat-hap-quan-au-42"
-                          title="Giặt hấp quần Âu (Quần Tây)"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/42/image_1024/%5BDVH-09%5D%20Gi%E1%BA%B7t%20h%E1%BA%A5p%20qu%E1%BA%A7n%20%C3%82u?unique=783ec59"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt hấp Quần Âu (Quần Tây)"
-                            alt="Giặt hấp Quần Âu (Quần Tây)"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt hấp Quần Âu (Quần Tây)</td>
-                      <td>45.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "107.031px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvh-01-giat-hap-ao-vest-39"
-                          title="Giặt hấp áo Vest"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/39/image_1024/%5BDVH-01%5D%20Gi%E1%BA%B7t%20h%E1%BA%A5p%20%C3%A1o%20Vest?unique=e87a720"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt hấp Áo Vest"
-                            alt="Giặt hấp Áo Vest"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt hấp Áo Vest</td>
-                      <td>89.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "107.031px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvh-03-giat-hap-am-vay-37"
-                          title="Giặt hấp Đầm (Váy)"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/37/image_1024/%5BDVH-03%5D%20Gi%E1%BA%B7t%20h%E1%BA%A5p%20%C4%90%E1%BA%A7m%20V%C3%A1y?unique=e0d8cbc"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt hấp Đầm (Váy)"
-                            alt="Giặt hấp Đầm (Váy)"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt hấp Đầm (Váy)</td>
-                      <td>75.000đ/Cái</td>
-                    </tr>
-                    <tr style={{ height: "131.562px" }}>
-                      <td>
-                        <a
-                          href="https://giatui247.vn/shop/dvh-02-giat-hap-ao-cuoi-vay-cuoi-35"
-                          title="Giặt hấp Áo Cưới (Váy Cưới)"
-                        >
-                          <img
-                            width="75"
-                            height="75"
-                            src="https://giatui247.vn/web/image/product.product/35/image_1024/%5BDVH-02%5D%20Gi%E1%BA%B7t%20h%E1%BA%A5p%20%C3%81o%20C%C6%B0%E1%BB%9Bi%20%28V%C3%A1y%20C%C6%B0%E1%BB%9Bi%29?unique=1507b65"
-                            className="img img-fluid o_we_custom_image rounded-circle shadow mx-auto d-block"
-                            data-mimetype="image/png"
-                            data-resize-width="50"
-                            loading="lazy"
-                            style={{
-                              padding: "1px !important",
-                              minHeight: "1px",
-                            }}
-                            title="Giặt hấp Áo Cưới (Váy Cưới)"
-                            alt="Giặt hấp Áo Cưới (Váy Cưới)"
-                            data-lazy-loading-initial-min-height=""
-                          />
-                        </a>
-                      </td>
-                      <td>Giặt hấp Áo Cưới (Váy Cưới)</td>
-                      <td>Chỉ từ 150.000đ/Cái*</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            </section>        
           </div>
         </section>
         <section
@@ -1433,7 +653,7 @@ function HomePage() {
                   data-original-src="/web_editor/shape/illustration/credit-card-svg-601?c1=%23637BBE&amp;unique=e28488e3"
                   data-mimetype="image/svg+xml"
                   data-resize-width="undefined"
-                  title="Khuyến mãi ưu đãi dịch vụ giặt ủi tại 247"
+                  title="Khuyến mãi ưu đãi dịch vụ giặt ủi tại LBS"
                   loading="lazy"
                 />
               </div>
@@ -1443,9 +663,9 @@ function HomePage() {
                 title="Chương trình khuyến mãi giặt ủi"
                 aria-describedby="tooltip936458"
               >
-                <h2>Giặt ủi với Khuyến mãi chỉ có tại 247</h2>
+                <h2>Giặt ủi với Khuyến mãi chỉ có tại LBS</h2>
                 <p>
-                  Dịch vụ giặt ủi 247 luôn tối đa lợi ích cho khách hàng bằng
+                  Dịch vụ giặt ủi LBS luôn tối đa lợi ích cho khách hàng bằng
                   những ưu đãi đặc quyền, khuyến mãi vượt trội.
                 </p>
                 <ul>
@@ -1496,13 +716,13 @@ function HomePage() {
                     data-mimetype="image/png"
                     data-resize-width="724"
                     data-bs-original-title=""
-                    title="Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của 247"
+                    title="Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của LBS"
                     aria-describedby="tooltip605849"
                     loading="lazy"
-                    alt="Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của 247"
+                    alt="Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của LBS"
                   />
                   <figcaption className="figure-caption text-muted py-3">
-                    "Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của 247"
+                    "Nhanh hơn - Tiện lợi hơn khi giặt ủi tại các Tiệm của LBS"
                   </figcaption>
                 </figure>
               </div>
@@ -1552,7 +772,7 @@ function HomePage() {
                     phẩm tùy chọn dịch vụ giặt ủi mà không cần mang đồ tới Tiệm.
                   </li>
                   <li>
-                    Tiện lợi hơn nữa khi đặt dịch vụ giặt ủi tại 247 và Chúng
+                    Tiện lợi hơn nữa khi đặt dịch vụ giặt ủi tại LBS và Chúng
                     tôi sẽ giao lại cho bạn vào bất cứ khi nào và ở đâu.
                   </li>
                 </ul>
@@ -1586,10 +806,10 @@ function HomePage() {
               <div className="col-lg-6 pt16 pb16 o_colored_level o_we_force_no_transition">
                 <h2 style={{ textAlign: "center" }}>Thảo luận - Đánh giá</h2>
                 <p>
-                  Bạn cần thêm thông tin hay, nêu thắc mắc về dịch vụ của 247
+                  Bạn cần thêm thông tin hay, nêu thắc mắc về dịch vụ của LBS
                   hay của bất kỳ cửa hàng hay nhà giặt nào. Hãy đặt câu hỏi và
                   xem những đánh giá nhận xét khách quan, câu trả lời hay nhất
-                  tại diễn đàn của 247. Mọi thông tin, chủ đề về thị trường giặt
+                  tại diễn đàn của LBS. Mọi thông tin, chủ đề về thị trường giặt
                   ủi hay các Tiệm giặt ủi gần đây được Chúng tôi và cộng đồng
                   cập nhật thường xuyên tại mục{" "}
                   <a href="/forum/thao-luan-tro-giup-1">Thảo luận/FAQs</a>. Sau
@@ -1600,7 +820,7 @@ function HomePage() {
                   <li>
                     <em>
                       <span style={{ fontSize: "14px" }}>
-                        Tiệm giặt ủi gần đây, thông tin tiệm giặt ủi 247 gần đây
+                        Tiệm giặt ủi gần đây, thông tin tiệm giặt ủi LBS gần đây
                         nhất?
                       </span>
                     </em>
@@ -1622,7 +842,7 @@ function HomePage() {
                   <li>
                     <em>
                       <span style={{ fontSize: "14px" }}>
-                        Chất lượng dịch vụ giặt ủi tại 247 có đảm bảo không?
+                        Chất lượng dịch vụ giặt ủi tại LBS có đảm bảo không?
                         được đánh giá theo tiêu chí, tiêu chuẩn nào?
                       </span>
                     </em>
@@ -1690,9 +910,9 @@ function HomePage() {
               <div className="col-lg-6 pt16 pb16 o_colored_level o_we_force_no_transition">
                 <p>
                   Nếu gần đây bạn thường xuyên giặt đồ tại các Tiệm giặt ủi hãy
-                  đăng ký nhận những bản tin mới nhất của 247 để nhận những
+                  đăng ký nhận những bản tin mới nhất của LBS để nhận những
                   thông tin ưu đãi - khuyến mãi dịch vụ giặt ủi vượt trội từ
-                  247!
+                  LBS!
                 </p>
                 <div
                   className="s_newsletter_subscribe_form s_newsletter_list js_subscribe"
@@ -1801,7 +1021,7 @@ function HomePage() {
                           Đặt dịch vụ giặt ủi trực tuyến hay đặt lịch giặt ủi
                           online đang dần trở thành xu hướng mới thay thế các
                           Tiệm giặt ủi truyền thống. Vậy có cần Tìm kiếm Tiệm
-                          giặt ủi gần đây không? Hãy cùng 247 xem xu thế đặt
+                          giặt ủi gần đây không? Hãy cùng LBS xem xu thế đặt
                           lịch giặt ủi trực tuyến như thế nào nhé!
                         </p>
                       </div>
@@ -1852,7 +1072,7 @@ function HomePage() {
                           thú…? Bạn muốn giữ cho chúng luôn bền đẹp và mới mẻ?
                           Bạn muốn tự tay chăm sóc và giặt ủi chúng tại nhà, Vậy
                           hãy tham khảo những lời khuyên và lưu ý khi giặt ủi
-                          những chất liệu cao cấp từ những chuyên gia của 247
+                          những chất liệu cao cấp từ những chuyên gia của LBS
                           tại bài viết này nhé!
                         </p>
                       </div>
@@ -1899,7 +1119,7 @@ function HomePage() {
                         <p className="s_blog_posts_post_subtitle mb-1 d-none d-sm-block">
                           Quần áo khi giặt ủi nhiều khi gặp phải tình trạng co
                           rút vải, vậy làm thế nào tránh bị co giãn&nbsp;khi
-                          giặt hay ủi? Hãy cùng 247 khám phá nguyên nhân để
+                          giặt hay ủi? Hãy cùng LBS khám phá nguyên nhân để
                           phòng tránh tình trạng co rút (co giãn) và cách giặt
                           ủi tại nhà tốt nhất cho quẩn áo của bạn.
                         </p>
@@ -1940,19 +1160,6 @@ function HomePage() {
                           />
                         </div>
                       </a>
-                      <div className="card-body">
-                        <a href="/blog/thong-tin-dich-vu-1/giat-la-ha-noi-thong-tin-nhung-tiem-giat-ui-giat-la-noi-tieng-gan-day-26">
-                          <h4 className="mb-0">
-                            Giặt là Hà Nội - Thông tin những Tiệm giặt ủi (Giặt
-                            là) nổi tiếng gần đây
-                          </h4>
-                        </a>
-                        <p className="s_blog_posts_post_subtitle mb-1 d-none d-sm-block">
-                          Giặt ủi 247 cập nhật thông tin một số Tiệm giặt ủi ở
-                          Hà Nội, Thông tin được cập nhật mới nhất từ cộng đồng
-                          (FAQs) trong quá trình thảo luận và hỏi đáp tại 247.
-                        </p>
-                      </div>
                       <div className="card-footer d-flex justify-content-between">
                         <span className="text-muted mb-0">thg 7 14, 2023</span>
                         <span className="text-muted mb-0">
@@ -2047,7 +1254,7 @@ function HomePage() {
                           chúng ta. Vậy bạn đã giặt ủi quần áo tại nhà đúng cách
                           chưa. Hãy tham khảo cách giặt ủi quần áo và các trang
                           phục thời trang&nbsp;đúng cách theo hướng dẫn&nbsp;của
-                          nhân viên giặt ủi giàu kinh nghiệm của Giặt ủi 247 sau
+                          nhân viên giặt ủi giàu kinh nghiệm của Giặt ủi LBS sau
                           đây.
                         </p>
                       </div>
