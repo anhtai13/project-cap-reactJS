@@ -421,20 +421,16 @@ function ManagerUsers() {
               </select>
               <label className="form-label mt-2">Password</label>
               <input
-                type="text"
+                type="password"
                 className="form-control"
-                defaultValue={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <label>Retype Password</label>
-              <div className="inputBox">
+              <label className="form-label mt-2">Retype Password</label>
                 <input
                   type="password"
-                  name="re-password"
-                  required
+                  className="form-control"
                   onChange={(e) => setRePassword(e.target.value)}
                 />
-              </div>
               <label className="form-label mt-2">Avatar</label>
               <input
                 type="text"
