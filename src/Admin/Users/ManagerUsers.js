@@ -27,6 +27,7 @@ function ManagerUsers() {
   const [updatedById, setUpdatedById] = useState();
   const [role, setRole] = useState(2);
   const [password, setPassword] = useState();
+  const [repassword, setRePassword] = useState("");
   const [isChanged, setIsChanged] = useState(false);
   const [listUser, setListUsers] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
@@ -290,7 +291,12 @@ function ManagerUsers() {
                         <td>{item.first_name}</td>
                         <td>{item.last_name}</td>
                         <td>
-                          <img src={item.avatar} alt="Ảnh của bạn" height={120} width={200} />
+                          <img
+                            src={item.avatar}
+                            alt="Ảnh của bạn"
+                            height={120}
+                            width={200}
+                          />
                         </td>
                         <td>
                           <select
@@ -413,6 +419,22 @@ function ManagerUsers() {
                 <option value={1}>Admin</option>
                 <option value={2}>User</option>
               </select>
+              <label className="form-label mt-2">Password</label>
+              <input
+                type="text"
+                className="form-control"
+                defaultValue={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <label>Retype Password</label>
+              <div className="inputBox">
+                <input
+                  type="password"
+                  name="re-password"
+                  required
+                  onChange={(e) => setRePassword(e.target.value)}
+                />
+              </div>
               <label className="form-label mt-2">Avatar</label>
               <input
                 type="text"
@@ -420,6 +442,7 @@ function ManagerUsers() {
                 defaultValue={avatar}
                 onChange={(e) => setAvatar(e.target.value)}
               />
+
               <label className="form-label mt-2">Created At</label>
               <input
                 type="text"
