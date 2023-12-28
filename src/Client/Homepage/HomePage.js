@@ -134,14 +134,12 @@ function HomePage() {
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "#03a9f4", paddingBottom: "250px" }}
+              style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000" }}
             >
-              <p style={{ fontSize: "50px", fontWeight: "bold" }}>
-                Giặt Ủi LBS
+              <p style={{fontSize: "40px" }}>
+                Giặt Ủi LBS - Giặt ủi tại Đà Nẵng
               </p>
-              <p style={{ fontSize: "40px" }}>
-                Giặt ủi tại Đà Nẵng
-              </p>
+
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item style={{ padding: "0 300px" }}>
@@ -151,8 +149,8 @@ function HomePage() {
               alt="Second slide"
               height="700px"
             />
-            <Carousel.Caption style={{ color: "#03a9f4", paddingBottom: "250px" }}>
-              <p style={{ fontSize: "50px" }}>
+            <Carousel.Caption style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000"}}>
+              <p style={{ fontSize: "40px" }}>
                 Đặt dịch vụ trực tuyến dễ dàng - Giao nhận tận nơi nhanh chóng ở
                 Đà Nẵng
               </p>
@@ -166,9 +164,9 @@ function HomePage() {
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "#03a9f4", paddingBottom: "250px" }}
+              style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000" }}
             >
-              <p style={{ fontSize: "50px"}}>
+              <p style={{ fontSize: "40px"}}>
                 Đa dạng dịch vụ từ giặt sấy cơ bản đến giặt ủi cao cấp
               </p>
             </Carousel.Caption>

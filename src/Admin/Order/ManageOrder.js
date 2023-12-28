@@ -133,10 +133,12 @@ function ManageOrder() {
                             disabled
                             className="form-control"
                           >
-                            <option value={1}>Chờ xác nhận</option>
-                            <option value={2}>Đã xác nhận</option>
-                            <option value={3}>Đã giặt hoàn tất</option>
-                            <option value={4}>Đã giao hàng</option>
+                            <option value={1}>Wait for confirmation</option>
+                            <option value={2}>Confirmed</option>
+                            <option value={3}>Delivering</option>
+                            <option value={4}>Delivered</option>
+                            <option value={5}>Refuse</option>
+                            <option value={6}>Finished washing</option>
                           </select>
                         </td>
                         <td>{item.note}</td>
@@ -200,7 +202,7 @@ function ManageOrder() {
                 <form>
                   <div className="mb-3">
                     <label for="order_at" className="col-form-label">
-                      Mã đơn hàng
+                    Code orders
                     </label>
                     <input
                       type="text"
@@ -213,7 +215,7 @@ function ManageOrder() {
                   </div>
                   <div className="mb-3">
                     <label for="order_at" className="col-form-label">
-                      Đặt hàng vào lúc
+                    Order at
                     </label>
                     <input
                       type="text"
@@ -226,7 +228,7 @@ function ManageOrder() {
                   </div>
                   <div className="mb-3">
                     <label for="order_at" className="col-form-label">
-                      Tổng tiền tạm tính
+                    TOTAL MONEY (Temporary)
                     </label>
                     <input
                       type="text"
@@ -239,17 +241,19 @@ function ManageOrder() {
                   </div>
                   <div className="mb-3">
                     <label for="order_at" className="col-form-label me-3">
-                      Trạng thái đơn hàng
+                    Order status
                     </label>
                     <select
                       className="form-select"
                       defaultValue={orderEdit.status_id}
                       onChange={(e) => setStatus(e.target.value)}
                     >
-                      <option value={1}>Chờ xác nhận</option>
-                      <option value={2}>Đã xác nhận</option>
-                      <option value={3}>Đã giặt hoàn tất</option>
-                      <option value={4}>Đã giao hàng</option>
+                      <option value={1}>Wait for confirmation</option>
+                      <option value={2}>Confirmed</option>
+                      <option value={3}>Delivering</option>
+                      <option value={4}>Delivered</option>
+                      <option value={5}>Refuse</option>
+                      <option value={6}>Finished washing</option>                   
                     </select>
                   </div>
                 </form>
