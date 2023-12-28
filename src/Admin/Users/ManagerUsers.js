@@ -115,7 +115,7 @@ function ManagerUsers() {
       //Gọi API thêm mới user
       await updateUser(formDataUpdate);
       toast.success(
-        `Cập nhật thông tin tài khoản id ${formDataUpdate.id} thành công!`
+        `Update account id information ${formDataUpdate.id} Success!`
       );
       setIsChanged(!isChanged);
     } catch (error) {
@@ -126,10 +126,10 @@ function ManagerUsers() {
 
   const handleDelete = async (id) => {
     setIsChanged(!isChanged);
-    if (window.confirm("Bạn có chắc chắn muốn xóa người dùng này không?")) {
+    if (window.confirm("Are you sure you want to delete this user?")) {
       try {
         await deleteUser(id);
-        toast.success(`Xóa thông tin tài khoản id ${id} thành công!`);
+        toast.success(`Delete account id information ${id} Success!`);
       } catch (error) {
         toast.error(error.response.data.error);
       }
@@ -138,7 +138,7 @@ function ManagerUsers() {
 
   const handleDeleteAll = () => {
     if (
-      window.confirm("Bạn có chắc chắn muốn xóa tất cả người dùng này không?")
+      window.confirm("Are you sure you want to delete all of these users?")
     ) {
       selectedUsers.forEach(async (userId) => {
         try {
@@ -148,7 +148,7 @@ function ManagerUsers() {
         }
       });
     }
-    toast.success(`Xóa các thông tin tài khoản đã chọn thành công!`);
+    toast.success(`Delete selected account information successfully!`);
     selectedUsers = [];
     setIsChanged(!isChanged);
   };

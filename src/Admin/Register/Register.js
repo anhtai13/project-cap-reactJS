@@ -39,14 +39,14 @@ function Register() {
     };
     //validate input
     if (password !== repassword) {
-      toast.error("Mật khẩu nhập lại không khớp");
+      toast.error("The re-entered password does not match");
     } else {
       try {
         //Gọi API thêm mới user
         await addUser(newAdmin);
         navigate("/home");
         toast.success(
-          `Đăng kí tài khoản username: ${newAdmin.username} thành công!`
+          `Register a username account: ${newAdmin.username} success!`
         );
       } catch (error) {
         toast.error(error.response.data.error);

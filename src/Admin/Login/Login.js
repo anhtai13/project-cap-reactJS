@@ -20,7 +20,7 @@ function Login() {
             const token = await loginAPI(userLogin)
             if (token) {
                 localStorage.setItem("admin", JSON.stringify(token))
-                toast.success("Đăng nhập thành công!")
+                toast.success("Logged in successfully!")
                 navigate("/home")
             }
         } catch (error) {
@@ -34,21 +34,21 @@ function Login() {
         <>
             <div className="containers">
                 <div className="box">
-                    <h1 align="center" >Đăng nhập</h1>
+                    <h1 align="center" >Login</h1>
                     <div className="inputBox">
                         <input type="text" name="username" required
                             onChange={(e) => setUsername(e.target.value)}
                         />
-                        <label>Tên đăng nhập</label>
+                        <label>User name</label>
                     </div>
                     <div className="inputBox">
                         <input type="password" name="password" required
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <label>Mật khẩu</label>
+                        <label>Password</label>
                     </div>
                     <div className="text-center">
-                        <button type="button" className="btn btn-danger me-3" onClick={handleLogin}>Đăng nhập</button>
+                        <button type="button" className="btn btn-danger me-3" onClick={handleLogin}>Login</button>
                     </div>
                 </div>
             </div>
