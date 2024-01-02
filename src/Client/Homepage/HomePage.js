@@ -644,7 +644,7 @@ function HomePage() {
               <div className="col-lg-6 pt16 pb16 o_colored_level">
                 <img
                   src="https://giatui247.vn/web_editor/shape/illustration/credit-card-svg-601?c1=%23637BBE&unique=e28488e3"
-                  alt="Khuyến mãi ưu đãi dịch vụ giặt ủi tại 247"
+                  alt="Khuyến mãi ưu đãi dịch vụ giặt ủi tại LBS"
                   className="img img-fluid mx-auto o_we_custom_image"
                   style={{ padding: "32px !important" }}
                   data-original-id="601"
