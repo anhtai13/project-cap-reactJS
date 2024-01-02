@@ -34,7 +34,6 @@ function UserProfile() {
         toast.error(error.response.data.error);
       }
     };
-
     handleUserProfile();
   }, []);
 
