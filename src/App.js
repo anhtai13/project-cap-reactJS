@@ -19,6 +19,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import OrderClient from "./ServiceClient/OrderClient";
 import BookingDemo from "./ServiceClient/BookingDemo";
+import UserProfile from "./Client/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/order_user/:id" element={<ManageOrderDetail />} />
         <Route path="/contact" element={<ManageContact />} />
         <Route path="/orderclient" element={<OrderClient />} />
+        <Route path="/userprofile" element={<UserProfile />} />
       </Routes>
       <ToastContainer />
     </>

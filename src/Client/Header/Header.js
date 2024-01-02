@@ -163,7 +163,7 @@ function Header() {
                         </a>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="/userprofile">
                               Hồ sơ cá nhân
                             </a>
                           </li>
