@@ -8,7 +8,7 @@ function Footer() {
                         <div className="container">
                             <div className="row align-items-end">
                                 <div className="col-lg-3 pt16 o_colored_level pb0" data-bs-original-title="" title="" aria-describedby="tooltip844757">
-                                    <h6>Giặt ủi với 247 quần áo&nbsp;đều&nbsp;sạch sẽ - gọn gàng - thơm tho</h6>
+                                    <h6>Giặt ủi với LBS quần áo&nbsp;đều&nbsp;sạch sẽ - gọn gàng - thơm tho</h6>
                                     <p>
                                         <span style={{ fontSize: "14px" }}>
                                             <a style={{ color: "black" }} href="/dich-vu-giat-ui" data-bs-original-title="" title="" aria-describedby="tooltip826827">Dịch vụ giặt ủi</a>
@@ -68,7 +68,7 @@ function Footer() {
                                     </span>
                                     <p data-bs-original-title="" title="" aria-describedby="tooltip717600">
                                         <span style={{ fontSize: "14px" }}>
-                                            <a style={{ color: "black" }} href="/huong-dan-at-dich-vu-quy-trinh-xu-ly-giat-ui-tai-247">Hướng dẫn đặt dịch vụ - Quy trình xử lý đồ vải tại 247</a>
+                                            <a style={{ color: "black" }} href="/huong-dan-at-dich-vu-quy-trinh-xu-ly-giat-ui-tai-247">Hướng dẫn đặt dịch vụ - Quy trình xử lý đồ vải tại LBS</a>
                                         </span>
                                     </p>
                                     <p data-bs-original-title="" title="" aria-describedby="tooltip228027">
@@ -112,10 +112,10 @@ function Footer() {
                                     </p>
                                 </div>
                                 <div className="col-lg-3 pt16 o_colored_level pb0" data-bs-original-title="" title="" aria-describedby="tooltip672813">
-                                    <h6>Kết nối với 247 qua các nền tảng mạng xã hội</h6>
+                                    <h6>Kết nối với LBS qua các nền tảng mạng xã hội</h6>
                                     <p data-bs-original-title="" title="" aria-describedby="tooltip750183">
                                         <a href="/">
-                                            <img src="https://giatui247.vn/web_editor/shape/illustration/social-growth-svg-1200?c1=%23637BBE&unique=10ce87e5" className="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="1200" data-original-src="/web_editor/shape/illustration/social-growth-svg-1200?c1=%23637BBE&amp;unique=10ce87e5" data-mimetype="image/svg+xml" data-bs-original-title="" title="Kết nối với giặt ủi 247 qua các nền tảng mạng xã hội phổ biến" aria-describedby="tooltip695407" alt="Kết nối với giặt ủi 247 qua các nền tảng mạng xã hội phổ biến" style={{ width: "50% !important" }} loading="lazy" />
+                                            <img src="https://giatui247.vn/web_editor/shape/illustration/social-growth-svg-1200?c1=%23637BBE&unique=10ce87e5" className="img img-fluid o_we_custom_image mx-auto d-block" data-original-id="1200" data-original-src="/web_editor/shape/illustration/social-growth-svg-1200?c1=%23637BBE&amp;unique=10ce87e5" data-mimetype="image/svg+xml" data-bs-original-title="" title="Kết nối với giặt ủi LBS qua các nền tảng mạng xã hội phổ biến" aria-describedby="tooltip695407" alt="Kết nối với giặt ủi LBS qua các nền tảng mạng xã hội phổ biến" style={{ width: "50% !important" }} loading="lazy" />
                                         </a>
                                         <br />
                                     </p>
@@ -165,7 +165,7 @@ function Footer() {
                                 <div className="o_brand_promotion">
                                     Cung cấp bởi
                                     <a className="badge text-bg-light" href="/">
-                                        <img alt="Giặt ủi 247" src="https://giatui247.vn/web/image/688-c1311fc7/logo247500x500.png" width="62" height="20" style={{ width: "auto", height: "1em", verticalAlign: "baseline" }} loading="lazy" />
+                                        <img alt="Giặt ủi LBS" src="https://giatui247.vn/web/image/688-c1311fc7/logo247500x500.png" width="62" height="20" style={{ width: "auto", height: "1em", verticalAlign: "baseline" }} loading="lazy" />
                                     </a>
                                     -
                                     <a href="/">Dịch vụ giặt ủi cao cấp tại DN</a>

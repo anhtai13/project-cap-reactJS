@@ -16,15 +16,15 @@ function Discount() {
                                     <span style={{ fontSize: "36px" }}>Khuyến mãi và Ưu đãi dịch vụ giặt ủi</span>
                                 </h1>
                                 <ul>
-                                    <li>Cập nhật thường xuyên những ưu đãi - khuyến mại dịch vụ mới nhất, thiết thực nhất qua những chương trình giảm giá dịch vụ (Sale Off) khi giặt ủi tại 247.</li>
-                                    <li>Tặng mã Coupon, Gift code, thẻ quà tặng có giá trị với những khách hàng thường xuyên giặt ủi tại 247.</li>
+                                    <li>Cập nhật thường xuyên những ưu đãi - khuyến mại dịch vụ mới nhất, thiết thực nhất qua những chương trình giảm giá dịch vụ (Sale Off) khi giặt ủi tại LBS.</li>
+                                    <li>Tặng mã Coupon, Gift code, thẻ quà tặng có giá trị với những khách hàng thường xuyên giặt ủi tại LBS.</li>
                                 </ul>
                                 <ul>
-                                    <li>Trải nghiệm chất lượng dịch vụ vượt trội với những khuyến mại đặc quyền&nbsp;với những khách hàng thân thiết của Giặt ủi 247.</li>
+                                    <li>Trải nghiệm chất lượng dịch vụ vượt trội với những khuyến mại đặc quyền&nbsp;với những khách hàng thân thiết của Giặt ủi LBS.</li>
                                 </ul>
                             </div>
                             <div className="col-lg-6 pt16 pb16 o_colored_level" >
-                                <img src="https://giatui247.vn/web_editor/shape/illustration/credit-card-svg-602?c1=%23637BBE&unique=e28488e3" alt="247 luôn có những khuyến mại dịch vụ giặt ủi thiết thực cho khách hàng" className="img img-fluid mx-auto o_we_custom_image" style={{ padding: "32px !important" }} data-original-id="602" data-original-src="/web_editor/shape/illustration/credit-card-svg-602?c1=%23637BBE&amp;unique=e28488e3" data-mimetype="image/svg+xml" data-resize-width="undefined" data-bs-original-title="" title="247 luôn có những khuyến mại dịch vụ giặt ủi thiết thực cho khách hàng" aria-describedby="tooltip594435" loading="lazy" />
+                                <img src="https://giatui247.vn/web_editor/shape/illustration/credit-card-svg-602?c1=%23637BBE&unique=e28488e3" alt="LBS luôn có những khuyến mại dịch vụ giặt ủi thiết thực cho khách hàng" className="img img-fluid mx-auto o_we_custom_image" style={{ padding: "32px !important" }} data-original-id="602" data-original-src="/web_editor/shape/illustration/credit-card-svg-602?c1=%23637BBE&amp;unique=e28488e3" data-mimetype="image/svg+xml" data-resize-width="undefined" data-bs-original-title="" title="LBS luôn có những khuyến mại dịch vụ giặt ủi thiết thực cho khách hàng" aria-describedby="tooltip594435" loading="lazy" />
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ function Discount() {
                         </h2>
                         <p style={{ textAlign: "center" }}>
                             <em>
-                                <span style={{ fontSize: "12px" }}>(Hãy tham gia - đăng ký tại các chương trình khuyến mãi do Giặt ủi 247 tổ chức)</span>
+                                <span style={{ fontSize: "12px" }}>(Hãy tham gia - đăng ký tại các chương trình khuyến mãi do Giặt ủi LBS tổ chức)</span>
                             </em>
                         </p>
                     </div>
@@ -74,7 +74,7 @@ function Discount() {
                                                 <div className="col ">
                                                     <main className="card-body">
                                                         <h5 className="card-title mt-2 mb-0 text-truncate ">
-                                                            <span itemprop="name">Tích điểm nhận ưu đãi dịch vụ giặt ủi tại 247</span>
+                                                            <span itemprop="name">Tích điểm nhận ưu đãi dịch vụ giặt ủi tại LBS</span>
                                                         </h5>
                                                         <time className="o_not_editable" itemprop="startDate" datetime="2023-12-01 06:30:00">
                                                             <span data-oe-type="datetime" data-oe-expression="event.date_begin">1 tháng 12, 2023</span> -
