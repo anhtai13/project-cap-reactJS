@@ -1,38 +1,77 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header/Header";
-import { getDetaiUser } from "../../Service/userAPI";
+import { getDetaiUser, updateUser } from "../../Service/userAPI";
 import { ToastContainer, toast } from "react-toastify";
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 
 function UserProfile() {
   const [user, setUser] = useState(null);
-  const [isChanged, setIsChanged] = useState(false);
   const [firstName, setFirstName] = useState();
   const [lastName, setLastName] = useState();
   const [userName, setUserName] = useState();
   const [email, setEmail] = useState();
   const [address, setAddress] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
-  const [password, setPassword] = useState();
-  const [confirmPassword, setConfirmPassword] = useState();
+  const [role, setRole] = useState();
+  const [avatar, setAvatar] = useState();
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const userId = JSON.parse(localStorage.getItem("userId"));
   useEffect(() => {
     const handleUserProfile = async () => {
       try {
         const userDetail = await getDetaiUser(userId);
         setUser(userDetail);
-        
+        setFirstName(userDetail[0].first_name);
+        setLastName(userDetail[0].last_name);
+        setUserName(userDetail[0].username);
+        setEmail(userDetail[0].email);
+        setAddress(userDetail[0].address_user);
+        setPhoneNumber(userDetail[0].phone_number);
+        setAvatar(userDetail[0].avatar);
+        setRole(userDetail[0].role);
       } catch (error) {
         toast.error(error.response.data.error);
       }
     };
 
     handleUserProfile();
-  }, [isChanged]);
+  }, []);
 
+  const handleEdit = async () => {
+    const data = {
+      id: userId,
+      username: userName,
+      email: email,
+      password: password,
+      first_name: firstName,
+      last_name: lastName,
+      role: role,
+      avatar: avatar === null || avatar === "" ? user[0].avatar : avatar,
+      address_user: address,
+      phone_number: phoneNumber,
+      created_at: user[0].created_at,
+      updated_at: new Date(),
+      created_by_id: userId,
+      updated_by_id: userId,
+    };
+    try {
+      if (password === "" && confirmPassword !== "") {
+        toast.error("The  password field is mandatory");
+      } else if (password !== "" && confirmPassword === "") {
+        toast.error("The confirm password field is mandatory");
+      } else {
+        await updateUser(data);
+        toast.success(`Update account information Success!`);
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000);
+      }
+    } catch (error) {
+      toast.error(error.response.data.error);
+    }
+  };
 
-
-  
   return (
     <div>
       <Header />
@@ -40,9 +79,7 @@ function UserProfile() {
         {user ? (
           <>
             <Row>
-              <Col
-                md={3}
-              >
+              <Col md={3}>
                 <div
                   style={{
                     display: "flex",
@@ -56,16 +93,24 @@ function UserProfile() {
                       width: 200,
                       height: 200,
                     }}
-                    src={user[0].avatar}
+                    src={
+                      avatar === null || avatar === ""
+                        ? user[0].avatar === null || user[0].avatar === ""
+                          ? "https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg"
+                          : user[0].avatar
+                        : avatar
+                    }
                     roundedCircle
                   />
                 </div>
                 <Form.Group className="mb-3">
-                  <Form.Label>Hình ảnh đại diện</Form.Label>
+                  <Form.Label>Avatar</Form.Label>
                   <Form.Control
                     type="text"
                     name="avatar"
-                    // onChange={handleUploadImage}
+                    onChange={(e) => {
+                      setAvatar(e.target.value);
+                    }}
                     multiple
                   />
                 </Form.Group>
@@ -94,7 +139,7 @@ function UserProfile() {
                         placeholder="Nhập tên"
                         name="firstName"
                         default
-                        Value={user[0].firstName}
+                        Value={user[0].first_name}
                         onChange={(e) => setFirstName(e.target.value)}
                         required
                       />
@@ -106,7 +151,7 @@ function UserProfile() {
                         placeholder="Nhập họ"
                         name="lastName"
                         default
-                        Value={user[0].lastName}
+                        Value={user[0].last_name}
                         onChange={(e) => setLastName(e.target.value)}
                         required
                       />
@@ -120,6 +165,7 @@ function UserProfile() {
                       name="username"
                       default
                       value={user[0].username}
+                      disabled
                       required
                     />
                   </Form.Group>
@@ -131,6 +177,7 @@ function UserProfile() {
                       name="email"
                       default
                       value={user[0].email}
+                      disabled
                       required
                     />
                   </Form.Group>
@@ -141,8 +188,8 @@ function UserProfile() {
                       placeholder="Nhập địa chỉ"
                       name="address"
                       default
-                      value={user[0].address}
-                      // onChange={handleChange}
+                      value={user[0].address_user}
+                      onChange={(e) => setAddress(e.target.value)}
                       required
                     />
                   </Form.Group>
@@ -153,8 +200,8 @@ function UserProfile() {
                       placeholder="Nhập số điện thoại"
                       name="phoneNumber"
                       default
-                      value={user[0].phoneNumber}
-                      // onChange={handleChange}
+                      value={user[0].phone_number}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                       required
                     />
                   </Form.Group>
@@ -166,7 +213,7 @@ function UserProfile() {
                       name="password"
                       default
                       // value={}
-                      // onChange={handleChange}
+                      onChange={(e) => setPassword(e.target.value)}
                       required
                     />
                   </Form.Group>
@@ -174,11 +221,11 @@ function UserProfile() {
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control
                       type="text"
-                      placeholder="Nhập số điện thoại"
+                      placeholder=""
                       name="confirmPassword"
                       default
                       // value={}
-                      // onChange={handleChange}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
                       required
                     />
                   </Form.Group>
@@ -190,7 +237,7 @@ function UserProfile() {
                       style={{
                         width: 150,
                       }}
-                      // onClick={handleUpdate}
+                      onClick={handleEdit}
                     >
                       Xác nhận
                     </Button>
