@@ -14,7 +14,6 @@ import Pagination from "../../common/pagination/Pagination";
 function ManageOrderDetail() {
   const [listOrder, setListOrder] = useState([]);
   const idUser = useParams();
-  console.log(idUser);
   const [isChanged, setIsChanged] = useState(false);
   const [id, setId] = useState();
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,6 +23,8 @@ function ManageOrderDetail() {
   const [itemsPerPage, setItemsPerPage] = useState(3);
   const [serialNumber, setSerialNumber] = useState();
   const [orderUpdate, setOrderUpdate] = useState([]);
+  const [quantity, setQuantity] = useState();
+  const [unitPrice, setUnitPrice] = useState();
   const [userId, setUserId] = useState();
   const [orderAt, setOrderAt] = useState();
   const [totalPrice, setTotalPrice] = useState();
@@ -72,7 +73,6 @@ function ManageOrderDetail() {
   const getListOrderDetail = async (id) => {
     try {
       const order = await getDetailOrders(id);
-      console.log(order);
       setListOrder(order);
     } catch (error) {
       console.log(error);
@@ -105,9 +105,10 @@ function ManageOrderDetail() {
   const handleEdit = async (id) => {
     try {
       const order = await getDetailOrdersById(id);
-      console.log(order);
       setOrderUpdate(order);
       setOrderInfo(order[0]);
+      setQuantity(order[0].quantity);
+      setTotalPrice(order[0].total_price);
     } catch (error) {
       console.log(error);
     }
@@ -130,29 +131,35 @@ function ManageOrderDetail() {
     }
   };
 
-//   const handleSaveEdit = async () => {
-//     const orderUpdated = {
-//       id: id ? id : orderInfo.id,
-//       serial_number: serialNumber ? serialNumber : orderInfo.serial_number,
-//       user_id: userId ? userId : orderInfo.user_id,
-//       order_at: orderAt ? orderAt : orderInfo.order_at,
-//       total_price: totalPrice ? totalPrice : orderInfo.total_price,
-//       status: status ? status : orderInfo.status,
-//       note: note ? note : orderInfo.note,
-//       created_at: createAt ? createAt : orderInfo.created_at,
-//       created_by_id: createById ? createById : orderInfo.created_by_id,
-//       updated_at: new Date(),
-//       updated_by_id: localStorageUser.id,
-//     };
-//     try {
-//       await updateOrder(orderUpdated);
-//       toast.success(`Cập nhật sản phẩm có id là ${orderInfo.id} thành công`);
-//       setIsChanged(!isChanged);
-//       setOrderUpdate([]);
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
+  const handleSaveEdit = async () => {
+    const orderUpdated = {
+      id: orderInfo.order_detail_id,
+      order_id: orderInfo.order_id,
+      serial_number: orderInfo.serial_number,
+      user_id: orderInfo.user_id,
+      order_at: orderInfo.order_at,
+      quantity: quantity ? Number(quantity) : orderInfo.quantity,
+      total_price: totalPrice
+        ? quantity * orderInfo.unit_price
+        : orderInfo.total_price,
+      status: orderInfo.status_id,
+      note: note ? note : orderInfo.note,
+      created_at: createAt ? createAt : orderInfo.created_at,
+      created_by_id: createById ? createById : orderInfo.created_by_id,
+      updated_at: new Date(),
+      updated_by_id: localStorageUser.id,
+    };
+    try {
+      await updateOrder(orderUpdated);
+      toast.success(
+        `Cập nhật sản phẩm có id là ${orderInfo.order_id} thành công`
+      );
+      setIsChanged(!isChanged);
+      setOrderUpdate([]);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -160,6 +167,11 @@ function ManageOrderDetail() {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleChangeQuantity = (e) => {
+    setQuantity(e.target.value);
+    setTotalPrice(quantity * orderInfo.unit_price);
   };
   return (
     <>
@@ -214,7 +226,7 @@ function ManageOrderDetail() {
                         <td>
                           <input
                             type="checkbox"
-                            value={item.id}
+                            value={item.order_id}
                             onChange={(e) => handleChooseIdToDelete(e)}
                           />
                         </td>
@@ -276,7 +288,7 @@ function ManageOrderDetail() {
                     id="order_at"
                     defaultValue={orderInfo.serial_number}
                     disabled
-                    onChange={(e) => setOrderAt(e.target.value)}
+                    onChange={(e) => setSerialNumber(e.target.value)}
                   />
                 </div>
                 <div>
@@ -284,12 +296,11 @@ function ManageOrderDetail() {
                     Số lượng (tính theo kg)
                   </label>
                   <input
-                    type="text"
+                    type="number"
                     className="form-control"
                     id="quantity"
                     defaultValue={orderInfo.quantity}
-                    disabled
-                    onChange={(e) => setCreatedById(e.target.value)}
+                    onChange={(e) => handleChangeQuantity(e)}
                   />
                 </div>
                 <div>
@@ -302,7 +313,7 @@ function ManageOrderDetail() {
                     id="unit_price"
                     defaultValue={orderInfo.unit_price}
                     disabled
-                    onChange={(e) => setCreatedById(e.target.value)}
+                    onChange={(e) => setUnitPrice(e.target.value)}
                   />
                 </div>
                 <div className="mb-3">
@@ -314,7 +325,7 @@ function ManageOrderDetail() {
                     readOnly
                     className="form-control"
                     id="total_price"
-                    defaultValue={orderInfo.sub_total_price}
+                    value={totalPrice}
                     disabled
                     onChange={(e) => setTotalPrice(e.target.value)}
                   />
@@ -348,6 +359,14 @@ function ManageOrderDetail() {
               </form>
             </div>
             <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-success"
+                data-bs-dismiss="modal"
+                onClick={handleSaveEdit}
+              >
+                Edit
+              </button>
               <button
                 type="button"
                 className="btn btn-secondary"
