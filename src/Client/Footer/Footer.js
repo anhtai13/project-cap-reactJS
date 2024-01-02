@@ -2,7 +2,7 @@
 function Footer() {
     return (
         <>
-            <footer id="bottom" data-anchor="true" data-name="Footer" className="o_footer o_colored_level o_cc ">
+            <footer id="bottom" data-anchor="true" data-name="Footer" className="o_footer o_colored_level o_cc " style={{fontFamily:"Arial"}}>
                 <div id="footer" className="oe_structure oe_structure_solo" >
                     <section className="s_text_block pb0 pt0" data-snippet="s_text_block" data-name="Text" style={{ backgroundImage: "none" }}>
                         <div className="container">

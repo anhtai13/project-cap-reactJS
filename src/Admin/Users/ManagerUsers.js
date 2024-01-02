@@ -27,6 +27,7 @@ function ManagerUsers() {
   const [updatedById, setUpdatedById] = useState();
   const [role, setRole] = useState(2);
   const [password, setPassword] = useState();
+  const [repassword, setRePassword] = useState("");
   const [isChanged, setIsChanged] = useState(false);
   const [listUser, setListUsers] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
@@ -115,7 +116,7 @@ function ManagerUsers() {
       //Gọi API thêm mới user
       await updateUser(formDataUpdate);
       toast.success(
-        `Cập nhật thông tin tài khoản id ${formDataUpdate.id} thành công!`
+        `Update account id information ${formDataUpdate.id} Success!`
       );
       setIsChanged(!isChanged);
     } catch (error) {
@@ -126,10 +127,10 @@ function ManagerUsers() {
 
   const handleDelete = async (id) => {
     setIsChanged(!isChanged);
-    if (window.confirm("Bạn có chắc chắn muốn xóa người dùng này không?")) {
+    if (window.confirm("Are you sure you want to delete this user?")) {
       try {
         await deleteUser(id);
-        toast.success(`Xóa thông tin tài khoản id ${id} thành công!`);
+        toast.success(`Delete account id information ${id} Success!`);
       } catch (error) {
         toast.error(error.response.data.error);
       }
@@ -138,7 +139,7 @@ function ManagerUsers() {
 
   const handleDeleteAll = () => {
     if (
-      window.confirm("Bạn có chắc chắn muốn xóa tất cả người dùng này không?")
+      window.confirm("Are you sure you want to delete all of these users?")
     ) {
       selectedUsers.forEach(async (userId) => {
         try {
@@ -148,7 +149,7 @@ function ManagerUsers() {
         }
       });
     }
-    toast.success(`Xóa các thông tin tài khoản đã chọn thành công!`);
+    toast.success(`Delete selected account information successfully!`);
     selectedUsers = [];
     setIsChanged(!isChanged);
   };
@@ -290,7 +291,12 @@ function ManagerUsers() {
                         <td>{item.first_name}</td>
                         <td>{item.last_name}</td>
                         <td>
-                          <img src={item.avatar} alt="Ảnh của bạn" height={120} width={200} />
+                          <img
+                            src={item.avatar}
+                            alt="Ảnh của bạn"
+                            height={120}
+                            width={200}
+                          />
                         </td>
                         <td>
                           <select
@@ -413,6 +419,18 @@ function ManagerUsers() {
                 <option value={1}>Admin</option>
                 <option value={2}>User</option>
               </select>
+              <label className="form-label mt-2">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <label className="form-label mt-2">Retype Password</label>
+                <input
+                  type="password"
+                  className="form-control"
+                  onChange={(e) => setRePassword(e.target.value)}
+                />
               <label className="form-label mt-2">Avatar</label>
               <input
                 type="text"
@@ -420,6 +438,7 @@ function ManagerUsers() {
                 defaultValue={avatar}
                 onChange={(e) => setAvatar(e.target.value)}
               />
+
               <label className="form-label mt-2">Created At</label>
               <input
                 type="text"

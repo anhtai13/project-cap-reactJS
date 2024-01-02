@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { getDetaiUser } from "../../Service/userAPI";
 import { toast } from "react-toastify";
-
+// function header
 function Header() {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
@@ -35,13 +35,14 @@ function Header() {
   }, []);
   return (
     <>
-      <div style={{ padding: "0 100px" }} className="bg-light">
+      <div style={{ padding: "0 100px" ,fontFamily:"Arial"}} className="bg-light">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <Link to="/" className="nav-link">
               <img
-                src="https://giatui247.vn/web/image/website/1/logo/Gi%E1%BA%B7t%20%E1%BB%A7i%20247?unique=14cb38c"
+                src="https://th.bing.com/th/id/OIG.MBDpBri6Cxu4Qek0DfkD?pid=ImgGn"
                 alt=""
+                style={{width: "100px", height: "80px",}}
               />
             </Link>
             <div

@@ -4,20 +4,20 @@ import Header from "../Header/Header"
 function About() {
     return (
         <>
-            <div style={{ position: "fixed", zIndex: "1000", width: "100%" }}>
+            <div style={{ position: "fixed", zIndex: "1000", width: "100%", }}>
                 <Header />
             </div>
-            <div id="wrap" className="oe_structure oe_empty">
+            <div id="wrap" className="oe_structure oe_empty" style={{fontFamily:"Arial"}}>
                 <section className="s_cover pt112 pb112 o_colored_level s_parallax_no_overflow_hidden bg-black-50 o_full_screen_height oe_img_bg o_bg_img_center" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style={{ height: "500px", position: "relative", backgroundImage: "url(https://giatui247.vn/web_editor/shape/illustration/online-shopping-svg-594?c1=%23637BBE&unique=ea83d576)", minHeight: "519px !important" }} data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Origins/07_002&quot;,&quot;colors&quot;:{&quot;c3&quot;:&quot;#F6F6F6&quot;,&quot;c4&quot;:&quot;#FFFFFF&quot;,&quot;c5&quot;:&quot;#F6F0EA&quot;},&quot;flip&quot;:[]}">
                     <div className="o_we_bg_filter bg-black-50"></div>
                     <div className="s_allow_columns container" style={{ position: "relative", top: "150px" }}>
                         <h1 style={{ textAlign: "center" }}>
                             <span style={{ fontSize: "62px" }}>
-                                <font className="text-gradient" style={{ backgroundImage: "linear-gradient(135deg, rgb(214, 255, 127) 0%, rgb(0, 179, 204) 100%)" }}>Giới Thiệu | Giặt Ủi </font>
+                                <font className="text-gradient" style={{ backgroundImage: "linear-gradient(135deg, rgb(214, 255, 127) 0%, rgb(0, 179, 204) 100%)",}}>Giới Thiệu | Giặt Ủi </font>
                                 <font className="text-gradient" style={{ backgroundImage: "linear-gradient(135deg, rgb(220, 242, 141) 2%, rgb(235, 112, 71) 50%, rgb(218, 42, 7) 77%)" }}>247</font>
                             </span>
                         </h1>
-                        <p style={{ textAlign: "center", fontWeight: "bold", padding: "0 200px", color: "red", fontSize: "20px" }}>Bạn cần giặt sạch một đống quần áo to tướng, hay bạn cần chuẩn bị một bộ đồ lộng lẫy thanh lịch trong một sự kiện quan trọng. Dịch vụ giặt ủi 247 tiện ích bạn cần ngay lúc này!</p>
+                        <p style={{ textAlign: "center", fontWeight: "bold", padding: "0 200px", color: "red", fontSize: "20px",  }}>Bạn cần giặt sạch một đống quần áo to tướng, hay bạn cần chuẩn bị một bộ đồ lộng lẫy thanh lịch trong một sự kiện quan trọng. Dịch vụ giặt ủi 247 tiện ích bạn cần ngay lúc này!</p>
                         <p style={{ textAlign: "center" }}>
                             <span style={{ fontSize: "62px" }}>
                                 <strong>" <font className="text-gradient" style={{ backgroundImage: "linear-gradient(135deg, rgb(255, 222, 69) 0%, rgb(142, 108, 27) 61%, rgb(243, 192, 104) 99%)" }}>Make More Time</font></strong>

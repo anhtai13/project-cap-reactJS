@@ -4,7 +4,7 @@
     margin             : 0;
     padding            : 0;
     font-family        : sans-serif;
-    background-image   : url("https://thuthuatphanmem.vn/uploads/2018/09/11/hinh-anh-dep-6_044127357.jpg");
+    background-image   : url("https://th.bing.com/th/id/OIG.qPxIxuIDCF_dqSXxchrD?w=1024&h=1024&rs=1&pid=ImgDetMain");
     background-size    : cover;
     background-position: center center;
 }
@@ -62,7 +62,7 @@
 .box .inputBox input:valid~label {
     top      : -18px;
     left     : 0;
-    color    : #03a9f4;
+    color    : #ffffff;
     font-size: 12px;
 }
 

@@ -77,7 +77,7 @@ function ManagerProducts() {
         }
         try {
             await addProduct(formData)
-            toast.success(`Thêm dịch vụ ${productName} thành công!`)
+            toast.success(`Add service ${productName} Success!`)
             document.getElementById("form").reset()
             setProductName("")
             setPrice("")
@@ -118,7 +118,7 @@ function ManagerProducts() {
         }
         try {
             await updateProduct(formDataUpdate)
-            toast.success(`Cập nhật dịch vụ ${productName} thành công!`)
+            toast.success(`Update service ${productName} success!`)
             document.getElementById("form").reset()
             setProductName("")
             setPrice("")
@@ -133,10 +133,10 @@ function ManagerProducts() {
     }
 
     const handleDeleteProduct = async (id) => {
-        if (window.confirm("Bạn có chắc chắn xóa dịch vụ này không?")) {
+        if (window.confirm("Are you sure to delete this service?")) {
             try {
                 await deleteProduct(id)
-                toast.success(`Xóa dịch vụ thành công!`)
+                toast.success(`Service deletion successful!`)
                 setIsChanged(!isChanged)
             } catch (error) {
                 errorResponse = error.response.data.error
@@ -146,7 +146,7 @@ function ManagerProducts() {
     }
 
     const handleDeleteAll = () => {
-        if (window.confirm("Bạn có chắc chắn muốn xóa tất cả dịch vụ này không?")) {
+        if (window.confirm("Are you sure you want to delete all of these services?")) {
             selectedProduct.forEach(async (productId) => {
                 try {
                     await deleteProduct(productId);
@@ -196,14 +196,14 @@ function ManagerProducts() {
                 <table id="customers" className="text-center" >
                     <thead >
                         <tr >
-                            <th>ID</th>
-                            <th>Tên dịch vụ</th>
-                            <th>Đơn giá dịch vụ</th>
-                            <th>Mô tả dịch vụ</th>
-                            <th>Ảnh minh họa</th>
-                            <th>Thời điểm có dịch vụ</th>
-                            <th>Dịch vụ được tạo bởi</th>
-                            <th>Hành động</th>
+                        <th>ID</th>
+                        <th>Service Name</th>
+                        <th>Service Price</th>
+                        <th>Service Description</th>
+                        <th>Image</th>
+                        <th>Service Availability Time</th>
+                        <th>Service Created By</th>
+                        <th>Action</th>
                             <th>
                                 <button className="btn btn-primary"
                                     onClick={handleDeleteAll}
@@ -222,7 +222,7 @@ function ManagerProducts() {
                                             <td>{(item.unit_price).toLocaleString()} đ</td>
                                             <td>{item.description}</td>
                                             <td>
-                                                <img src={item.image} alt="Ảnh bị hư rồi" height={120} width={200} />
+                                                <img src={item.image} alt="The photo is damaged" height={120} width={200} />
                                             </td>
                                             <td>{item.created_at}</td>
                                             <td>Admin</td>
@@ -267,37 +267,37 @@ function ManagerProducts() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">{isEdit ? "Cập nhật dịch vụ" : "Thêm loại dịch vụ"}</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">{isEdit ? "Update service" : "Add service type"}</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <form id="form">
                                 <div className="mb-3">
-                                    <label for="product-name" className="col-form-label">Tên dịch vụ:</label>
+                                    <label for="product-name" className="col-form-label">Name service:</label>
                                     <input type="text" className="form-control" id="product-name" defaultValue={isEdit ? productName : ''}
                                         onChange={(e) => setProductName(e.target.value)}
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="price" className="col-form-label">Đơn giá dịch vụ:</label>
+                                    <label for="price" className="col-form-label">Service unit price:</label>
                                     <input type="number" min={10000} className="form-control" id="price" defaultValue={isEdit ? price : 10000}
                                         onChange={(e) => setPrice(e.target.value)}
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="description" className="col-form-label">Mô tả:</label>
+                                    <label for="description" className="col-form-label">Description:</label>
                                     <textarea type="text" className="form-control" id="description" defaultValue={isEdit ? description : ''}
                                         onChange={(e) => setDescription(e.target.value)}
                                     ></textarea>
                                 </div>
                                 <div className="mb-3">
-                                    <label for="image" className="col-form-label">Hình ảnh dịch vụ:</label>
+                                    <label for="image" className="col-form-label">Image service:</label>
                                     <input type="text" className="form-control" id="image" defaultValue={isEdit ? imgUrl : ''}
                                         onChange={(e) => setImgUrl(e.target.value)}
                                     />
                                 </div>
                                 <div className="mb-3 text-center">
-                                    <img src={imgUrl} height={200} width={200} alt="Thiếu ảnh rồi" />
+                                    <img src={imgUrl} height={200} width={200} alt="Missing photos" />
                                 </div>
                             </form>
                         </div>

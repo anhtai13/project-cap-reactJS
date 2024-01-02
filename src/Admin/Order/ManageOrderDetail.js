@@ -81,10 +81,10 @@ function ManageOrderDetail() {
 
   const handleDeleteProduct = async (id) => {
     setIsChanged(!isChanged);
-    if (window.confirm("Bạn có chắc chắn xóa đơn hàng này không?")) {
+    if (window.confirm("Are you sure to delete this order?")) {
       try {
         await deleteOrder(id);
-        toast.success(`Xoá thành công`);
+        toast.success(`Deleted successfully`);
         getListOrderDetail(idUser.id);
       } catch (error) {
         console.log(error);
@@ -115,7 +115,7 @@ function ManageOrderDetail() {
 
   const handleDeleteAll = () => {
     if (
-      window.confirm("Bạn có chắc chắn muốn xóa tất cả đơn hàng này không?")
+      window.confirm("Are you sure you want to delete all of these orders?")
     ) {
       selectedProduct.forEach(async (productId) => {
         try {
