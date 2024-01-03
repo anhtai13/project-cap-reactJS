@@ -138,9 +138,7 @@ function ManagerUsers() {
   };
 
   const handleDeleteAll = () => {
-    if (
-      window.confirm("Are you sure you want to delete all of these users?")
-    ) {
+    if (window.confirm("Are you sure you want to delete all of these users?")) {
       selectedUsers.forEach(async (userId) => {
         try {
           await deleteUser(userId);
@@ -426,11 +424,11 @@ function ManagerUsers() {
                 onChange={(e) => setPassword(e.target.value)}
               />
               <label className="form-label mt-2">Retype Password</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  onChange={(e) => setRePassword(e.target.value)}
-                />
+              <input
+                type="password"
+                className="form-control"
+                onChange={(e) => setRePassword(e.target.value)}
+              />
               <label className="form-label mt-2">Avatar</label>
               <input
                 type="text"
