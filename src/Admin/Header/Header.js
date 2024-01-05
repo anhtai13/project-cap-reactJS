@@ -9,7 +9,7 @@ import { Image } from "react-bootstrap";
 
 function Header() {
   const localStorageToken = JSON.parse(localStorage.getItem("admin"));
-  const adminId = JSON.parse(localStorage.getItem("userId"));
+  const adminId = JSON.parse(localStorage.getItem("adminId"));
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   if (!localStorageToken) {
@@ -18,10 +18,8 @@ function Header() {
 
   const handleLogout = async () => {
     try {
-      const status = await logoutAPI({ key: localStorageToken });
       localStorage.removeItem("admin");
-      localStorage.removeItem("userId");
-      toast.success(status);
+      localStorage.removeItem("adminId");
       navigate("/login");
     } catch (error) {
       console.log(error);

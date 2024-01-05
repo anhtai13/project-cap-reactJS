@@ -16,7 +16,7 @@ function AdminProfile(props) {
   const [avatar, setAvatar] = useState();
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const userId = JSON.parse(localStorage.getItem("userId"));
+  const userId = JSON.parse(localStorage.getItem("adminId"));
 
   useEffect(() => {
     const handleUserProfile = async () => {

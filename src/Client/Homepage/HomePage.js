@@ -17,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 function HomePage() {
   const [listProducts, setListProducts] = useState([]);
   const navigate = useNavigate();
-  const isLogin = JSON.parse(localStorage.getItem("admin"));
+  const isLogin = JSON.parse(localStorage.getItem("user"));
   let userId = JSON.parse(localStorage.getItem("userId"));
   const [currentProduct, setCurrentProduct] = useState([]);
   const [searchItems, setSearchItems] = useState([]);
