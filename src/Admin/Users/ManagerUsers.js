@@ -26,7 +26,7 @@ function ManagerUsers() {
   const [createdById, setCreatedById] = useState();
   const [updatedById, setUpdatedById] = useState();
   const [role, setRole] = useState(2);
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState("");
   const [repassword, setRePassword] = useState("");
   const [isChanged, setIsChanged] = useState(false);
   const [listUser, setListUsers] = useState([]);
@@ -91,7 +91,6 @@ function ManagerUsers() {
     setIsEdit(!isEdit);
     setUserName(item.username);
     setEmail(item.email);
-    setPassword(item.password);
     setFirstName(item.first_name);
     setLastName(item.last_name);
     setAvatar(item.avatar);
