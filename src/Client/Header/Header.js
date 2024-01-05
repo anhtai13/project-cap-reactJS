@@ -17,6 +17,7 @@ function Header() {
 
   const handleLogout = () => {
     localStorage.removeItem("admin");
+    localStorage.removeItem("userId");
     navigate("/userlogin");
   };
 

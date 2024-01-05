@@ -20,6 +20,7 @@ function Login() {
             const token = await loginAPI(userLogin)
             if (token) {
                 localStorage.setItem("admin", JSON.stringify(token))
+                localStorage.setItem("userId", JSON.stringify(token.id))
                 toast.success("Logged in successfully!")
                 navigate("/home")
             }
