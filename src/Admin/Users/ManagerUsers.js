@@ -52,11 +52,15 @@ function ManagerUsers() {
   }, [isChanged]);
 
   useEffect(() => {
+    // Kiểm tra search input có giá trị hay không
     if (searchTerm !== "") {
+      // Thực thi filter list danh sách User có Username chứa các kí tự hoặc chuỗi của searchTerm
       const results = listUser.filter((item) =>
         item.username.toLowerCase().includes(searchTerm.toLowerCase())
       );
+      // gán list danh sách user sau khi filter cho biến SearchItems
       setSearchItems(results);
+      // Tính toán số trang phân ra
       const dataPaging = results.slice(indexOfFirstItem, indexOfLastItem);
       setCurrentUser(dataPaging);
     } else {
@@ -126,11 +130,11 @@ function ManagerUsers() {
   };
 
   const handleDelete = async (id) => {
-    setIsChanged(!isChanged);
     if (window.confirm("Are you sure you want to delete this user?")) {
       try {
         await deleteUser(id);
         toast.success(`Delete account id information ${id} Success!`);
+        setIsChanged(!isChanged);
       } catch (error) {
         toast.error(error.response.data.error);
       }
