@@ -26,13 +26,13 @@ function HomePage() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedDate, setSelectedDate] = useState();
+  const [selectedDate, setSelectedDate] = useState("");
   const [serviceUnitPrice, setServiceUnitPrice] = useState();
   const [quantity, setQuantity] = useState(1);
   const [subTotalPrice, setSubTotalPrice] = useState();
   const [note, setNote] = useState();
   const [serviceImgChoosen, setServiceImgChoosen] = useState();
-  const [addressOrder, setAddressOrder] = useState();
+  const [addressOrder, setAddressOrder] = useState("");
   const [serviceChoosenId, setServiceChoosenId] = useState();
 
   let serviceChoosen = {};
@@ -100,20 +100,26 @@ function HomePage() {
       unit_price: serviceUnitPrice,
       quantity: quantity,
       subTotalPrice: serviceUnitPrice * Number(quantity),
-      address_order: addressOrder ? addressOrder : "",
-      date_receive: selectedDate ? selectedDate : "",
+      address_order: addressOrder,
+      date_receive: selectedDate,
     };
     try {
-      await addOrder(serviceBookingInfo);
-      toast.success("Đặt lịch giặt thành công!");
-      if (!window.confirm("Bạn có muốn tiếp tục đặt dịch vụ không?")) {
-        navigate("/orderclient");
+      if (addressOrder == "") {
+        toast.error("Please input a address order");
+      } else if (selectedDate == "") {
+        toast.error("Please choose a Date order");
+      } else {
+        await addOrder(serviceBookingInfo);
+        toast.success("Đặt lịch giặt thành công!");
+        if (!window.confirm("Bạn có muốn tiếp tục đặt dịch vụ không?")) {
+          navigate("/orderclient");
+        }
       }
     } catch (e) {
       console.log(e);
     }
   };
-  
+
   return (
     <>
       <div style={{ position: "fixed", zIndex: "1000", width: "100%" }}>
@@ -135,12 +141,17 @@ function HomePage() {
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000" }}
+              style={{
+                color: "white",
+                paddingBottom: "250px",
+                margin: "20px",
+                fontWeight: "bold",
+                textShadow: "2px 2px 4px #000000",
+              }}
             >
-              <p style={{fontSize: "40px" }}>
+              <p style={{ fontSize: "40px" }}>
                 Giặt Ủi LBS - Giặt ủi tại Đà Nẵng
               </p>
-
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item style={{ padding: "0 300px" }}>
@@ -150,7 +161,15 @@ function HomePage() {
               alt="Second slide"
               height="700px"
             />
-            <Carousel.Caption style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000"}}>
+            <Carousel.Caption
+              style={{
+                color: "white",
+                paddingBottom: "250px",
+                margin: "20px",
+                fontWeight: "bold",
+                textShadow: "2px 2px 4px #000000",
+              }}
+            >
               <p style={{ fontSize: "40px" }}>
                 Đặt dịch vụ trực tuyến dễ dàng - Giao nhận tận nơi nhanh chóng ở
                 Đà Nẵng
@@ -165,9 +184,15 @@ function HomePage() {
               height="700px"
             />
             <Carousel.Caption
-              style={{ color: "white", paddingBottom: "250px" , margin:"20px", fontWeight:"bold", textShadow: "2px 2px 4px #000000" }}
+              style={{
+                color: "white",
+                paddingBottom: "250px",
+                margin: "20px",
+                fontWeight: "bold",
+                textShadow: "2px 2px 4px #000000",
+              }}
             >
-              <p style={{ fontSize: "40px"}}>
+              <p style={{ fontSize: "40px" }}>
                 Đa dạng dịch vụ từ giặt sấy cơ bản đến giặt ủi cao cấp
               </p>
             </Carousel.Caption>
@@ -443,7 +468,7 @@ function HomePage() {
                               height: "100px",
                             }}
                           >
-                            {item.name_service}
+                            {item.description}
                           </Card.Title>
                         </div>
                         <div className="text-center">
@@ -630,8 +655,7 @@ function HomePage() {
               data-snippet="s_searchbar"
               data-name="Search"
               style={{ backgroundImage: "none" }}
-            >
-            </section>        
+            ></section>
           </div>
         </section>
         <section

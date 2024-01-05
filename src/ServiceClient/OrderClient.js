@@ -102,7 +102,7 @@ function OrderClient() {
               <th>Tổng tiền tạm tính</th>
               <th>Trạng thái</th>
               <th>Ghi chú</th>
-              <th>Người tạo đơn hàng</th>
+              {/* <th>Người tạo đơn hàng</th> */}
               <th>Hành động</th>
             </tr>
           </thead>
@@ -125,14 +125,16 @@ function OrderClient() {
                             type="text"
                             className="form-control"
                           >
-                            <option value={0}>Từ chối</option>
-                            <option value={1}>Chờ xác nhận</option>
-                            <option value={2}>Đã xác nhận</option>
-                            <option value={3}>Đã hoàn thành</option>
+                            <option value={1}>Wait for confirmation</option>
+                            <option value={2}>Confirmed</option>
+                            <option value={3}>Delivering</option>
+                            <option value={4}>Delivered</option>
+                            <option value={5}>Refuse</option>
+                            <option value={6}>Finished washing</option>
                           </select>
                         </td>
                         <td>{item.note}</td>
-                        <td>{item.created_by_id}</td>
+                        {/* <td>{item.created_by_id}</td> */}
                         <td>
                           <button
                             className="btn btn-warning me-2"

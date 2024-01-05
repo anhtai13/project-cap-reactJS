@@ -30,6 +30,8 @@ function ManagerUsers() {
   const [repassword, setRePassword] = useState("");
   const [isChanged, setIsChanged] = useState(false);
   const [listUser, setListUsers] = useState([]);
+  const [address_user, setAddress_user] = useState("");
+  const [phone_number, setPhone_number] = useState("");
   const [isEdit, setIsEdit] = useState(false);
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
@@ -93,6 +95,8 @@ function ManagerUsers() {
     setFirstName(item.first_name);
     setLastName(item.last_name);
     setAvatar(item.avatar);
+    setAddress_user(item.address_user);
+    setPhone_number(item.phone_number);
     setCreatedAt(item.created_at);
     setRole(item.role);
     setId(item.user_id);
@@ -111,6 +115,8 @@ function ManagerUsers() {
       last_name: lastName,
       role: role,
       avatar: avatar,
+      address_user: address_user,
+      phone_number: phone_number,
       created_at: createdAt,
       updated_at: new Date(),
       created_by_id: localStorageUser.user_id,
@@ -409,6 +415,20 @@ function ManagerUsers() {
                 className="form-control"
                 defaultValue={lastName}
                 onChange={(e) => setLastName(e.target.value)}
+              />
+              <label className="form-label mt-2">Address User</label>
+              <input
+                type="text"
+                className="form-control"
+                defaultValue={address_user}
+                onChange={(e) => setAddress_user(e.target.value)}
+              />
+              <label className="form-label mt-2">Phone Number</label>
+              <input
+                type="text"
+                className="form-control"
+                defaultValue={phone_number}
+                onChange={(e) => setPhone_number(e.target.value)}
               />
               <label className="form-label mt-2">Role</label>
               <select
