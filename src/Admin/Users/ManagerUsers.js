@@ -91,7 +91,6 @@ function ManagerUsers() {
     setIsEdit(!isEdit);
     setUserName(item.username);
     setEmail(item.email);
-    setPassword(item.password);
     setFirstName(item.first_name);
     setLastName(item.last_name);
     setAvatar(item.avatar);

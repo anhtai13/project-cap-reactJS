@@ -19,7 +19,7 @@ function UserLogin() {
         try {
             const token = await loginAPI(userLogin)
             if (token) {
-                localStorage.setItem("admin", JSON.stringify(token.key))
+                localStorage.setItem("user", JSON.stringify(token.key))
                 localStorage.setItem("userId", JSON.stringify(token.id))
                 toast.success("Đăng nhập thành công!")
                 navigate("/")

@@ -9,14 +9,14 @@ function Header() {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
 
-  const isLogin = JSON.parse(localStorage.getItem("admin"));
+  const isLogin = JSON.parse(localStorage.getItem("user")); 
   const userId = JSON.parse(localStorage.getItem("userId"));
   // if (!isLogin) {
   //   navigate("/userlogin");
   // }
 
   const handleLogout = () => {
-    localStorage.removeItem("admin");
+    localStorage.removeItem("user");
     localStorage.removeItem("userId");
     navigate("/userlogin");
   };

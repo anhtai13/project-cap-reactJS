@@ -20,7 +20,7 @@ function OrderClient() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const navigate = useNavigate();
-  const localStorageUser = JSON.parse(localStorage.getItem("admin"));
+  const localStorageUser = JSON.parse(localStorage.getItem("user"));
   const userId = JSON.parse(localStorage.getItem("userId"));
 
   if (!localStorageUser) {
