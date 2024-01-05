@@ -22,7 +22,9 @@ function BookingDemo() {
             data-snippet="s_text_image"
             data-name="Text - Image"
           >
-            <div className="container">
+            <div className="container" 
+            style={{padding: 0 }}
+            >
               <div
                 className="row align-items-center"
                 data-bs-original-title=""
@@ -91,7 +93,7 @@ function BookingDemo() {
                     title=""
                     aria-describedby="tooltip133213"
                   >
-                    <div className="container">
+                    <div className="container"  style={{padding: 0 }}>
                       <form
                         action="/website/form/"
                         method="post"
@@ -312,9 +314,6 @@ function BookingDemo() {
                                   name="email_to"
                                   value="giatui247.vn@gmail.com"
                                 />
-                                <div className="s_website_form_field_description small form-text text-muted">
-                                  Phân cách địa chỉ email bằng dấu phẩy.
-                                </div>
                               </div>
                             </div>
                           </div>
@@ -330,7 +329,7 @@ function BookingDemo() {
                               className="s_website_form_label"
                             ></div>
                             <button className="btn btn-primary">
-                              Gửi cho 247
+                              Gửi cho LBS
                             </button>
                             <span id="s_website_form_result"></span>
                           </div>
@@ -373,7 +372,7 @@ function BookingDemo() {
           </section>
         </div>
       </div>
-      <div>
+      <div style={{marginTop: 100}}>
         <Footer />
       </div>
     </>
