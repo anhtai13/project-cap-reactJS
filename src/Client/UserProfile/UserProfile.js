@@ -207,7 +207,7 @@ function UserProfile() {
                   <Form.Group className="mb-3" control Id="password">
                     <Form.Label>Password</Form.Label>
                     <Form.Control
-                      type="text"
+                      type="password"
                       placeholder=""
                       name="password"
                       default
@@ -219,7 +219,7 @@ function UserProfile() {
                   <Form.Group className="mb-3" control Id="confirmPassword">
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control
-                      type="text"
+                      type="password"
                       placeholder=""
                       name="confirmPassword"
                       default
