@@ -279,11 +279,6 @@ function ManagerUsers() {
               </th>
               <th>Created At</th>
               <th>Actions</th>
-              <th>
-                <button className="btn btn-primary" onClick={handleDeleteAll}>
-                  Delete All
-                </button>
-              </th>
             </tr>
           </thead>
           <tbody>
@@ -318,6 +313,7 @@ function ManagerUsers() {
                         </td>
                         <td>{item.created_at}</td>
                         <td>
+                          {/* disable */}
                           {item.role == 1 ? (
                             ""
                           ) : (
@@ -338,13 +334,6 @@ function ManagerUsers() {
                               </button>
                             </>
                           )}
-                        </td>
-                        <td>
-                          <input
-                            type="checkbox"
-                            value={item.id}
-                            onChange={(e) => handleChooseIdToDelete(e)}
-                          />
                         </td>
                       </tr>
                     </>

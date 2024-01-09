@@ -22,6 +22,7 @@ function ManageOrderDetail() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(3);
   const [serialNumber, setSerialNumber] = useState();
+  const [name_service, setNameService] = useState();
   const [orderUpdate, setOrderUpdate] = useState([]);
   const [quantity, setQuantity] = useState();
   const [unitPrice, setUnitPrice] = useState();
@@ -121,11 +122,11 @@ function ManageOrderDetail() {
       selectedProduct.forEach(async (productId) => {
         try {
           await deleteOrder(productId);
+          setIsChanged(!isChanged);
         } catch (error) {
           console.log(error);
         }
       });
-      setIsChanged(!isChanged);
       toast.success("Delete all orders chosen successfully");
       selectedProduct = [];
     }
@@ -289,6 +290,20 @@ function ManageOrderDetail() {
                     defaultValue={orderInfo.serial_number}
                     disabled
                     onChange={(e) => setSerialNumber(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3">
+                  <label for="order_at" className="col-form-label">
+                    Tên dịch vụ
+                  </label>
+                  <input
+                    type="text"
+                    readOnly
+                    className="form-control"
+                    id="order_at"
+                    value={orderInfo.name_service}
+                    disabled
+                    onChange={(e) => setNameService(e.target.value)}
                   />
                 </div>
                 <div>
